@@ -36,8 +36,161 @@
   <body>
 
     <div class="reveal">
-      <div class="slides"><section id="hello" class="slide" data-has-notes="false">
-<h2>Developer Induction</h2>
+      <div class="slides"><section id="chapter-introduction" class="chapter">
+<section id="introduction-developer-introduction" class="slide" data-has-notes="false">
+<h1>Developer Induction</h1>
+</section>
+
+<section id="introduction-agenda" class="slide" data-has-notes="false">
+<h1>Agenda</h1><p>|30 mins|Welcome and introductions|
+|30 mins|Introduction to the DSP|
+|2 hours|Hands on with the DSP|
+|1 hour|Continuous integration with Drone|
+|45 mins|Lunch|
+|30 mins|Securing applications in the Home Office|
+|1 hour accessibility|Welcome and introductions|
+|15 mins|Welcome and introductions|
+|15 mins|Welcome and introductions|</p>
+</section>
+</section>
+
+<section id="chapter-central-team" class="chapter">
+<section id="central-team-central-team" class="slide" data-has-notes="false">
+<h1>The Central Team</h1>
+</section>
+
+<section id="central-team-who-are-we" class="slide" data-has-notes="false">
+<h2>Who are we?</h2><p>Developers and DevOps Engineers</p>
+</section>
+
+<section id="central-team-why-do-we-exist" class="slide" data-has-notes="false">
+<h2>Why do we exist?</h2><h3>Our aim – to enable delivery teams to deliver higher quality software and services more quickly</h3><ul>
+<li>We’re still researching how best to do this, but have done a lot already</li>
+<li>Generally we will be looking at:<ul>
+<li>Central services, products, libraries, and tooling</li>
+<li>Supporting projects to use these services, and align to best practice</li>
+<li>Supporting consistently high quality recruitment</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="central-team-what-have-we-done-devops" class="slide" data-has-notes="false">
+<h2>What have we done?</h2><ul>
+<li>DevOps team are more established, and delivered a number of services<ul>
+<li>Hosting platform</li>
+<li>Gitlab</li>
+<li>Monitoring with Sysdig</li>
+<li>Logging with ELK</li>
+<li>Artifactory</li>
+<li>CI</li>
+<li>Keycloak authentication</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="central-team-what-have-we-done-devops" class="slide" data-has-notes="false">
+<h2>What have we done?</h2><ul>
+<li>More recently, together we have delivered<ul>
+<li>Documentation for the platform</li>
+<li>Developer inductions</li>
+<li>Drone CI improvements and guidance</li>
+<li>Survey tools research and recommendation</li>
+<li>Security scanning tools initial research</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="central-team-whats-next" class="slide" data-has-notes="false">
+<h2>What’s next?</h2><ul>
+<li>Find out what’s next on our kanban boards<ul>
+<li><a href="https://github.com/UKHomeOffice/central-devteam-board/projects/1">https://github.com/UKHomeOffice/central-devteam-board/projects/1</a></li>
+<li><a href="https://github.com/UKHomeOffice/central-devopsteam-board/projects/1">https://github.com/UKHomeOffice/central-devopsteam-board/projects/1</a></li>
+</ul>
+</li>
+<li>But generally…<ul>
+<li>More user research...</li>
+<li>Dashboards for project teams</li>
+<li>Node V6 and Yarn package manager</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+<section id="chapter-how-we-work" class="chapter">
+<section id="how-we-work-how-we-work" class="slide" data-has-notes="false">
+<h1>How do developers in the Home Office work?</h1>
+</section>
+
+<section id="how-we-work-pair-programming" class="slide" data-has-notes="false">
+<h2>Pair programming</h2><p><img src="images/pair-programming.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-bdd-tdd" class="slide" data-has-notes="false">
+<h2>BDD and TDD</h2><p><img src="images/bdd-tdd.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-clean-code" class="slide" data-has-notes="false">
+<h2>Clean Code</h2><p><img src="images/clean-code.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-branching" class="slide" data-has-notes="false">
+<h2>Branching</h2><ul>
+<li>Protect your master branch​<ul>
+<li>No force pushing to master​</li>
+<li>Reviews required on PRs before they can be merged​</li>
+</ul>
+</li>
+<li>Develop each story on a new branch​</li>
+<li>Merge to master regularly to avoid merge hell​</li>
+</ul>
+</section>
+
+<section id="how-we-work-expectations" class="slide" data-has-notes="false">
+<h2>Expectations</h2><ul>
+<li>Understand the platform​</li>
+<li>Responsible for security​</li>
+<li>Responsible for documentation​</li>
+<li>Reach out to other teams, identify opportunities to share best practice and re-use components​</li>
+<li>Publicise libraries and services​</li>
+<li>Up to 20% of time on non-project work​</li>
+<li>Participate in away days​</li>
+</ul>
+</section>
+
+<section id="how-we-work-in-return" class="slide" data-has-notes="false">
+<h2>In return you get...</h2><ul>
+<li>To work with really good people​</li>
+<li>Flexible working​</li>
+<li>To use interesting tech​</li>
+<li>To work with other professions​</li>
+<li>An opportunity to give back to wider Home Office, Cross Government, and beyond...​</li>
+</ul>
+</section>
+
+<section id="how-we-work-tech-we-use" class="slide" data-has-notes="false">
+<h2>The technology we use</h2><ul>
+<li>Java 8, Scala, or Javascript​</li>
+<li>Java – Spring, Dropwizard​</li>
+<li>Scala – Play, Spray​</li>
+<li>Javascript​<ul>
+<li>Back end – node, express​</li>
+<li>Front end – angular, react​</li>
+</ul>
+</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+</ul>
+</section>
+
+<section id="how-we-work-technology-stack" class="slide" data-has-notes="false">
+<h2>The HO technology stack</h2><p>More detail on the technology stack is kept on trello, showing which technologies we are investing in and which are on
+their way out</p>
+<p><a href="https://trello.com/b/IGRXc88M/technology-stack-beta​">https://trello.com/b/IGRXc88M/technology-stack-beta​</a></p>
+</section>
 </section></div>
     </div>
 

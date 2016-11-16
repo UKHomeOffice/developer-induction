@@ -2,8 +2,8 @@ language: node_js
 node_js:
 - '6'
 script:
-- npm install -g prez
-- prez
+- npm install prez
+- ./node_modules/.bin/prez
 - cd build
 - test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && git init && git remote add upstream "https://$GITHUB_TOKEN@github.com/UKHomeOffice/developer-induction.git" && git fetch upstream && git reset upstream/gh-pages && git add -A . && git commit -m "rebuild pages at ${TRAVIS_COMMIT}" && git push -q upstream HEAD:gh-pages && \
 env:

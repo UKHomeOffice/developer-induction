@@ -1,4 +1,5 @@
 FROM quay.io/ukhomeofficedigital/revealjs
-
-ADD build/index.html /app/revealjs/index.html
-ADD build/images /app/revealjs/images
+RUN npm install -g prez
+COPY . /tmp/code
+RUN prez /tmp/code && \
+    mv build/index.html build/images /app/revealjs/

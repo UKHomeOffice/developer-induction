@@ -2,6 +2,9 @@
 This repo contains the slides for developer induction, produced with prez/revealjs.
 
 ## Viewing the slides
+### Viewing published slide deck
+[Published slide deck available here](https://ukhomeoffice.github.io/developer-induction/build/index.html)
+
 ### Viewing html file locally
 Open build/index.html with a web browser
 

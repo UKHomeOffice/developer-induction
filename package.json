@@ -1,0 +1,20 @@
+{
+  "name": "developer-induction",
+  "version": "1.0.0",
+  "description": "This repo contains the slides for developer induction, produced with prez/revealjs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "prez --serve --watch --print"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git-github:UKHomeOffice/developer-induction"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "phantomjs-prebuilt": "^2.1.13",
+    "prez": "^4.7.0"
+  }
+}

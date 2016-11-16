@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '6'
+script:
+- npm install -g prez
+- prez
+- cd build
+- test $TRAVIS_PULL_REQUEST == "false" && test $TRAVIS_BRANCH == "master" && git init && git remote add upstream "https://$GITHUB_TOKEN@github.com/UKHomeOffice/developer-induction.git" && git fetch upstream && git reset upstream/gh-pages && git add -A . && git commit -m "rebuild pages at ${TRAVIS_COMMIT}" && git push -q upstream HEAD:gh-pages && \
+env:
+  secure: RH5uwFb/oiGHyVN0GVynYJ7ZoFayLqPgXJY7aDO6o4Fz4SqrJ+TS8TFJLVcWJqIPbexCcFHdmUeAoOU6uyAenerur1BjggkviSqzOeCkPn4GmCaTm4TMYW0s6CdBOqEp4SLO82ty/a7XXAOC2K59arahBUacpk3XuIpqcnq4TvNWBqZdwSZpV/WWuyPWvRYvTjJLJMX1TGxc2eC3Kh/nW5FP+giYOfW+qDh+nXmmytLSw3/2G9K3rWs4EB4x5KWhzLf+6BIgwIRcOFHDDMvRMa+a4b85lySSieUEm//nC3QYXPH35O1HHZ6qh+9ShMAsw+3B8dHS/HjqHUWBlj9jfe87QVbgkcdG5mYTezkznn36Y2dT2q9NQ7gQWAymZzshABEfn+xB4vEM++PH6fvZz+/GvTy11xmGSSvdlbzpUb8RoHlMPWvh7ebRcQxpaWN/DSU59+sQlVG4jfqCOcPsu/a2qnfjNLPqIGDcJvD/tMi152UbWpB2YuM8SBFO5SOos2ZXyQmpa1ME6EfflLPv83LW+NGJCyqGRey5sE21IM9CDrTq3UNmFBod0+uZ4AL/jT8uadDaD4LmaIStUfHUOF3qx0d50AQX9VQIGBVpbQ4lZBG2zKEOS7oZoMho4M0INMzQ6uRYlGoHdwV/O++Wv3WUzUyGUbXffuRZQ+8elWk=

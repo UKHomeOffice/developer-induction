@@ -1,10 +1,15 @@
 ## Mission 4! Build your application on CI​
 
 You will need the Drone docs...  
-http://bit.ly/2fRNrUV
+http://bit.ly/2hpHIc8
 
-#### Objective 1 – Install the CLI and activate your repository​
+#### Objective 1 - Create a public repo under UKHomeOffice org called docker-node-hello-world-yourname 
+Where yourname is replaced with your name!
 
-#### Objective 2 – Make CI build your application whenever a new commit is pushed​
+This repo should contain all the files from your earlier mission where you dockerised node-hello-world.
 
-#### Objective 3 – Publish a Docker image to Quay as part of your CI pipeline​
+#### Objective 2 – Install the Drone CLI and activate your repository​ (see the docs above)
+
+#### Objective 3 – Make CI build your application whenever a new commit is pushed​
+
+#### Objective 4 – Publish a Docker image to Quay as part of your CI pipeline​

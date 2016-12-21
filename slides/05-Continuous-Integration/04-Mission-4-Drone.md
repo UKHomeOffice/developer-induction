@@ -6,7 +6,7 @@ http://bit.ly/2hpHIc8
 #### Objective 1 - Create a public repo under UKHomeOffice org called docker-node-hello-world-yourname 
 Where yourname is replaced with your name!
 
-This repo should contain all the files from your earlier mission where you dockerised node-hello-world.
+This repo should contain all the files from your earlier mission where you dockerised and deployed node-hello-world.
 
 #### Objective 2 – Install the Drone CLI and activate your repository​ (see the docs above)
 

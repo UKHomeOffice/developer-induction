@@ -1,1 +1,1 @@
-![](images/pod-service-ingress.jpg)
+![](images/pod-service-ingress-cluster-namespace.jpg)

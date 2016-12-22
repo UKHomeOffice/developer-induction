@@ -248,6 +248,10 @@ runtime, system tools, system libraries – anything you can install on a server
 </ul>
 </section>
 
+<section id="hod-platform-and-technologies-04b-docker-build-process" class="slide" data-has-notes="false">
+<p><img src="images/docker-build-process.jpg" alt=""></p>
+</section>
+
 <section id="hod-platform-and-technologies-mission-1-docker" class="slide" data-has-notes="false">
 <h2>Mission 1! Getting started with Docker</h2><h4>Objective 1 – complete the docker getting started tutorial​</h4><p><a href="https://docs.docker.com/engine/getstarted/​">https://docs.docker.com/engine/getstarted/​</a></p>
 <h4>Objective 2 – Dockerise a simple NodeJS application (you can use one of your own applications if you like!)​</h4><p><a href="https://github.com/UKHomeOffice/node-hello-world">https://github.com/UKHomeOffice/node-hello-world</a> ​</p>
@@ -278,11 +282,8 @@ deployment, scaling, and operations of application containers across clusters of
 <p>Read up on the Kubernetes documentation for more information!​<br><a href="http://kubernetes.io/docs/">http://kubernetes.io/docs/</a></p>
 </section>
 
-<section id="hod-platform-and-technologies-mission-2-deployment" class="slide" data-has-notes="false">
-<h2>Mission 2! Deploy an application to DSP</h2><h4>Objective 1 – Make sure you have completed the developer getting started guide!​</h4><p><a href="http://bit.ly/2gEJ2IK">http://bit.ly/2gEJ2IK</a></p>
-<h3>Objective 2 - Run a kubernetes cluster locally with minikube and deploy a sample application to it</h3><p><a href="http://bit.ly/2gIf0Cb">http://bit.ly/2gIf0Cb</a></p>
-<h4>Objective 3 – Deploy a sample application to the DSP​</h4><p><a href="http://bit.ly/2hbs3hj">http://bit.ly/2hbs3hj</a></p>
-<h4>Objective 4 – Delete everything you have deployed!​</h4>
+<section id="hod-platform-and-technologies-kubernetes-key-concepts" class="slide" data-has-notes="false">
+<p><img src="images/pod-service-ingress-cluster-namespace.jpg" alt=""></p>
 </section>
 
 <section id="hod-platform-and-technologies-managing-deployments-multiple-envs" class="slide" data-has-notes="false">
@@ -293,9 +294,17 @@ deployment, scaling, and operations of application containers across clusters of
 </ul>
 </section>
 
-<section id="hod-platform-and-technologies-mission-3-kd" class="slide" data-has-notes="false">
-<h2>Mission 3! Use kd to deploy your application in a single command</h2><h4>Objective 1 – Use kd to deploy your application in one line using at least one templated variable!​</h4><p><a href="https://github.com/UKHomeOffice/kd​">https://github.com/UKHomeOffice/kd​</a></p>
-<h4>Objective 2 – Delete everything you have deployed!​</h4>
+<section id="hod-platform-and-technologies-mission-2-deployment" class="slide" data-has-notes="false">
+<h2>Mission 2! Deploy an application to DSP</h2><h4>Objective 1 – Make sure you have completed the developer getting started guide!​</h4><p><a href="http://bit.ly/2gEJ2IK">http://bit.ly/2gEJ2IK</a></p>
+<h4>Objective 2 - Run a kubernetes cluster locally with minikube and deploy a sample application to it</h4><p><a href="http://bit.ly/2gIf0Cb">http://bit.ly/2gIf0Cb</a></p>
+<h4>Objective 3 – Use kd to deploy your application in one line​</h4><p><a href="https://github.com/UKHomeOffice/kd​">https://github.com/UKHomeOffice/kd​</a></p>
+<h4>Objective 4 – Deploy a sample application to the DSP​</h4><p><a href="http://bit.ly/2hbs3hj">http://bit.ly/2hbs3hj</a></p>
+<h4>Objective 5 – Delete everything you have deployed!​</h4>
+</section>
+
+<section id="hod-platform-and-technologies-mission-3-secrets" class="slide" data-has-notes="false">
+<h2>Mission 3! Use a secret in your deployed application</h2><h4>Objective 1 – Create a kubernetes secret, making sure to template our the secret value in your secret yaml</h4><p><a href="http://bit.ly/2h2CizD">http://bit.ly/2h2CizD</a></p>
+<h4>Objective 2 - Update your deployment to load in your secret as an environment variable called MYSUPERSECRET</h4><p>Tutorial follows on from link above</p>
 </section>
 
 <section id="hod-platform-and-technologies-more-tools" class="slide" data-has-notes="false">
@@ -358,8 +367,8 @@ deployment, scaling, and operations of application containers across clusters of
 
 <section id="continuous-integration-mission-4-drone" class="slide" data-has-notes="false">
 <h2>Mission 4! Build your application on CI​</h2><p>You will need the Drone docs...<br><a href="http://bit.ly/2hpHIc8">http://bit.ly/2hpHIc8</a></p>
-<h4>Objective 1 - Create a public repo under UKHomeOffice org called docker-node-hello-world-yourname</h4><p>Where yourname is replaced with your name!</p>
-<p>This repo should contain all the files from your earlier mission where you dockerised and deployed node-hello-world.</p>
+<h4>Objective 1 - Create a public repo under UKHomeOffice org called dsp-hello-world-yourname</h4><p>Where yourname is replaced with your name!</p>
+<p>This repo should be an exact copy of dsp-hello-world</p>
 <h4>Objective 2 – Install the Drone CLI and activate your repository​ (see the docs above)</h4><h4>Objective 3 – Make CI build your application whenever a new commit is pushed​</h4><h4>Objective 4 – Publish a Docker image to Quay as part of your CI pipeline​</h4>
 </section>
 </section>
@@ -769,7 +778,8 @@ explanation as to why this can&#39;t be done for specific subsets of the source 
 </section>
 
 <section id="thanks" class="slide" data-has-notes="false">
-<h1>Thanks!</h1>
+<h1>Thanks!</h1><p>Please complete the survey here:
+<a href="http://www.homeofficesurveys.homeoffice.gov.uk/s/NWWXY/">http://www.homeofficesurveys.homeoffice.gov.uk/s/NWWXY/</a></p>
 </section></div>
     </div>
 

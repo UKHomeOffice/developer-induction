@@ -1,1 +1,2 @@
 ## Motor Impairment
+<iframe class="stretch" src="https://www.youtube.com/embed/SPCQCjpDrB0?rel=0&amp;autoplay=1&amp;controls=0&amp;showinfo=0" frameborder="0" autoplay>[Video of a hand tremo](https://www.youtube.com/watch?v=SPCQCjpDrB0)</iframe>

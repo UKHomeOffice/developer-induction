@@ -25,3 +25,7 @@ pre {
     width: initial !important;
     white-space: pre-wrap;
 }
+
+.speaker-notes {
+    display: none !important;
+}

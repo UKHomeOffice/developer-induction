@@ -1,3 +1,3 @@
-Editor
-<iframe class="ace stretch">FROM node:6-alpine
+Dockerfile Editor
+<iframe class="ace stretch" data-mode="dockerfile">FROM node:6-alpine
 </iframe>

@@ -2,9 +2,8 @@
 
 ![](images/given-names.jpg)
 
-```
-<label for="givenName"> ​
-  Given names​
-</label>​
-<input type="text" id="givenName" aria-required="true">​
-```
+<iframe class="ace stretch" data-mode="html"><label for="givenName">
+  Given names
+</label>
+<input type="text" id="givenName" aria-required="true">
+</iframe>

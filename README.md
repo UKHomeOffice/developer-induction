@@ -30,3 +30,11 @@ These will be reloaded automatically when changes are made to the slides.
 It will also update pdf versions of the slides as you make edits.
 
 Edit the slides in the **slides** folder.
+
+
+## Presentation mode
+If you're presenting you can syncronise everyone else's screen, in your browser console do:
+```js
+Cookies.set("secret", "[insert secret")
+```
+> Get the secret from @chrisns

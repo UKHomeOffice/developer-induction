@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "prez --watch --serve --print",
-    "build": "prez --print --no-open-browser"
+    "build": "prez --print --no-open-browser --print-notes"
   },
   "repository": {
     "type": "git",

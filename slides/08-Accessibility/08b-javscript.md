@@ -23,4 +23,5 @@ There are many situations when extra layers can fail to load or are filtered. Th
  - mobile network providers resampling images and altering content to speed up load times and reduce bandwidth usage
  - personal firewalls or antivirus software altering or blocking content
  - internet providers inserting their own code into the page that accidentally conflicts with your own
+ 
  Of course, some users turn off features in their browsers deliberately - you should respect their decision and make sure they can still use your service.

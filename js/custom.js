@@ -17,5 +17,3 @@ head.js("//cdn.rawgit.com/Gottox/reveal.js-ace/master/ace.js");
 head.js("//cdn.socket.io/socket.io-1.3.5.js");
 head.js("plugin/multiplex/master.js");
 head.js("plugin/multiplex/client.js");
-head.js("//cdn.rawgit.com/marcysutton/reveal-a11y/master/accessibility/helper.css");
-head.js("//cdn.rawgit.com/marcysutton/reveal-a11y/master/accessibility/helper.js");

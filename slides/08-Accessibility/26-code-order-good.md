@@ -4,7 +4,7 @@
 
 ```
 <label for="givenName"> ​
-    Given names​
+  Given names​
 </label>​
-<input type="text" name="givenName" id="givenName" class="form-control" aria-required="true">​
+<input type="text" id="givenName" aria-required="true">​
 ```

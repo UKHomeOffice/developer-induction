@@ -4,6 +4,6 @@
 ```
 <input type="text">​
 <label style="margin-top: -4em">​
-    Given names
+  Given names
 </label>​
 ```

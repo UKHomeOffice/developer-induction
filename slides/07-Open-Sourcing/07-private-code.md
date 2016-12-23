@@ -1,2 +1,2 @@
-## Private Code
-![](images/gitlab.jpg)
+## Private Code - gitlab
+![](images/gitlab.png)

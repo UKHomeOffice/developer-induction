@@ -1,17 +1,21 @@
 /* custom styles can go here */
 
 #chapter-foo p {
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 #accessibility-keyboard-only-example a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #accessibility-tab-index-example a {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #accessibility-colour-bad2 p a {
-	text-decoration: underline;
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Helvetica, sans-serif !important;
 }

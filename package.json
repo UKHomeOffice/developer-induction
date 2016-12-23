@@ -4,7 +4,7 @@
   "description": "This repo contains the slides for developer induction, produced with prez/revealjs.",
   "main": "index.js",
   "scripts": {
-    "start": "prez --serve --watch --theme=white --print"
+    "start": "prez --serve --watch --theme=white --highlight-theme=vs --print"
   },
   "repository": {
     "type": "git",

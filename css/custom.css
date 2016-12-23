@@ -26,6 +26,10 @@ pre {
     white-space: pre-wrap;
 }
 
-.speaker-notes {
+body:not(.print-pdf) .speaker-notes {
     display: none !important;
+}
+
+body.print-pdf .speaker-notes {
+    position: relative !important;
 }

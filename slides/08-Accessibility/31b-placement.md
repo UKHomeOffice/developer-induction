@@ -1,0 +1,2 @@
+## Content placement gone wrong at zoom
+<video class="stretch" controls type="video/mp4" src="/media/content-placement.mp4">[A video of content placement gone wrong](https://www.youtube.com/watch?v=4IbpQld5J_0)</video>

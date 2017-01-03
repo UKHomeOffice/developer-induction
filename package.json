@@ -4,7 +4,8 @@
   "description": "This repo contains the slides for developer induction, produced with prez/revealjs.",
   "main": "index.js",
   "scripts": {
-    "start": "prez --serve --watch --print"
+    "start": "prez --watch --serve --print",
+    "build": "prez --print --no-open-browser --print-notes"
   },
   "repository": {
     "type": "git",
@@ -12,9 +13,9 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "phantomjs-prebuilt": "^2.1.13",
-    "prez": "^4.7.0"
+    "prez": "chrisns/prez#973a69d524ab24783e78f411237bbf2c1fcd04d9"
   }
 }

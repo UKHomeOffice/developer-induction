@@ -5,4 +5,7 @@
 - Understand who will be accessing the service / data, with what devices via what networks / 3rd party services​
 - Only store and use the minimum amount of data required to fulfil the user need​
 - Restrict users to only being able to view the data they need​
-- Understanding who Information Asset Owner will drive some of ^^^ decisions – the service manager for your project can tell you who the IAO is​
+- Understanding who Information Asset Owner will drive some of ^^^ decisions
+
+note:
+the service manager for your project can tell you who the IAO is​

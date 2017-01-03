@@ -1,0 +1,14 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: developer-induction-ingress
+spec:
+  rules:
+  - host: developer-induction.notprod.homeoffice.gov.uk
+    http:
+      paths:
+      - backend:
+          serviceName: developer-induction-service
+          servicePort: http
+        path: /

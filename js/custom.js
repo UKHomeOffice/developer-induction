@@ -2,7 +2,6 @@ head.ready("js.cookie.js", function () {
   Reveal.configure({
     "center": true,
     progress: true,
-    history: true,
     showNotes: true,
     multiplex: {
       secret: Cookies.get("secret") || null,

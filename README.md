@@ -3,15 +3,13 @@ This repo contains the slides for developer induction, produced with prez/reveal
 
 ## Viewing the slides
 ### Viewing published slide deck
-[Published slide deck available here](https://ukhomeoffice.github.io/developer-induction/build/index.html)
-
-### Viewing html file locally
-Open build/index.html with a web browser
+[Published slide deck available here](http://developer-induction.notprod.homeoffice.gov.uk)
+[Published PDF slide deck available here](http://developer-induction.notprod.homeoffice.gov.uk/slides.pdf)
 
 ### Running as a server with docker
 ```
 docker build -t dev-induction . 
-docker run -ti -p 8000:8000 dev-induction
+docker run -ti -p 9000:80 dev-induction
 ```
 
 ## Editing the slides

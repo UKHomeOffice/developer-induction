@@ -2,3 +2,4 @@ node_modules
 kube
 build
 slides.pdf
+Dockerfile

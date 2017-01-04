@@ -11,11 +11,11 @@ spec:
         name: developer-induction
     spec:
       containers:
-      - name: signed-commit-check
+      - name: developer-induction
         image: quay.io/ukhomeofficedigital/developer-induction:{{.DRONE_COMMIT_SHA}}
         ports:
           - name: http
-            containerPort: 80
+            containerPort: 9000
         resources:
           limits:
             cpu: 250m
@@ -26,7 +26,7 @@ spec:
           - name: PROXY_SERVICE_HOST
             value: '127.0.0.1'
           - name: PROXY_SERVICE_PORT
-            value: '80'
+            value: '9000'
           - name: LOG_FORMAT_NAME
             value: json
           - name: NAXSI_USE_DEFAULT_RULES

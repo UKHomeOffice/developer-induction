@@ -13,10 +13,9 @@ RUN rpm --rebuilddb && \
     gcc-c++ \
     bzip2 \
     which && \
-  yum clean all && \
-  mkdir -p /var/log/nginx &&\
-  ln -s /dev/stderr /var/log/nginx/error.log && \
-  ln -s /dev/stdout /var/log/nginx/access.log
+  yum clean all
+
+COPY nginx/nginx.conf /etc/nginx/nginx.conf
 
 WORKDIR /app
 
@@ -27,6 +26,6 @@ RUN npm install
 COPY . .
 
 RUN npm run build && \
-  mv build/* slides.pdf /usr/share/nginx/html/
+  mv slides.pdf build/
 
 CMD ["/usr/sbin/nginx", "-g", "daemon off;"]

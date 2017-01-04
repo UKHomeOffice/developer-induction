@@ -2,6 +2,8 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
+  annotations:
+    ingress.kubernetes.io/secure-backends: "true"
   name: developer-induction-ingress
 spec:
   rules:
@@ -10,5 +12,10 @@ spec:
       paths:
       - backend:
           serviceName: developer-induction-service
-          servicePort: http
+          servicePort: https
         path: /
+  tls:
+  - hosts:
+    - developer-induction.notprod.homeoffice.gov.uk
+    - www.developer-induction.notprod.homeoffice.gov.uk
+    secretName: external-tls

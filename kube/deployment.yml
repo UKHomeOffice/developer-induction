@@ -20,3 +20,17 @@ spec:
           limits:
             cpu: 250m
             memory: 256Mi
+      - name: proxy
+        image: quay.io/ukhomeofficedigital/nginx-proxy:v1.6.1
+        env:
+          - name: PROXY_SERVICE_HOST
+            value: '127.0.0.1'
+          - name: PROXY_SERVICE_PORT
+            value: '80'
+          - name: LOG_FORMAT_NAME
+            value: json
+          - name: NAXSI_USE_DEFAULT_RULES
+            value: 'FALSE'
+        ports:
+          - name: https
+            containerPort: 443

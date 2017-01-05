@@ -1,4 +1,4 @@
-## Code order ![](images/cross.jpg)
+## Code order ✖
 
 ![](images/given-names.jpg)
 <iframe class="ace stretch" data-mode="html"><input type="text">

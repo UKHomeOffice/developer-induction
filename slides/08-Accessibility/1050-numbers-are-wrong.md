@@ -2,7 +2,7 @@
 (but it's the best numbers we've got right now)
 
 
-#### Registered disability !== Accessibility need
+#### Registered disability != Accessibility need
 
 note:
 - Registering or even self identifying is quite different to just having a need.

@@ -1,14 +1,24 @@
 head.ready("js.cookie.js", function () {
   Reveal.configure({
-    "center": true,
+    center: true,
     progress: true,
     showNotes: true,
     multiplex: {
       secret: Cookies.get("secret") || null,
       id: 'd6e0af17bc853141', // id, obtained from socket.io server
       url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
-    },
-
+    }
+  });
+  Reveal.addEventListener('slidechanged', function (event) {
+    var current_videos = event.currentSlide.getElementsByTagName("video");
+    for (var i = 0; i < current_videos.length; i++) {
+      current_videos[i].currentTime = 0;
+      current_videos[i].play();
+    }
+    var previous_videos = event.previousSlide.getElementsByTagName("video");
+    for (var i = 0; i < previous_videos.length; i++) {
+      previous_videos[i].pause();
+    }
   });
 });
 head.js("//cdn.rawgit.com/js-cookie/js-cookie/latest/src/js.cookie.js");

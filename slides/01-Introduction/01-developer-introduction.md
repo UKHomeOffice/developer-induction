@@ -1,2 +1,2 @@
 # Developer Induction
-`If watching live, press S to see the notes`
+`Press S to see the notes`

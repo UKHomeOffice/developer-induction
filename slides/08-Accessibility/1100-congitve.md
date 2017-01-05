@@ -9,8 +9,13 @@
 [Credit](webaim.org/simulations/dyslexia-sim.html)
 
 note:
+
+Thiss is how someone with dyslexia might read your text
+
 Would a text-only site be ideal for someone with a reading disorder? Hardly. Images are not bad for accessibility. They actually increase comprehension and usability for most audiences.
 
 What many people do not know, though, is there is much more to the accessibility of an image than just its alt text. Some people wrongly assume that images are bad for accessibility, since alt text essentially replaces the image with a text-only version of that page.
 
 By Paul Bohman
+
+This should feed into how you design content and understand the speed that someone can complete a task, think session timeouts etc.

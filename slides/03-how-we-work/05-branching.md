@@ -3,4 +3,4 @@
   - No force pushing to master​
   - Reviews required on PRs before they can be merged​
 - Develop each story on a new branch​
-- Merge to master regularly to avoid merge hell​
+- Rebase/merge from master regularly to avoid merge hell​

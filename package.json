@@ -4,7 +4,7 @@
   "description": "This repo contains the slides for developer induction, produced with prez/revealjs.",
   "main": "index.js",
   "scripts": {
-    "start": "prez --watch --serve --print",
+    "start": "prez --watch --serve",
     "build": "prez --print --no-open-browser --print-notes"
   },
   "repository": {

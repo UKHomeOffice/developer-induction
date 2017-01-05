@@ -1,4 +1,4 @@
-## Semantic markup ![](images/tick.jpg)
+## Semantic markup ✔
 
 ![](images/immigration-status.jpg)
 <iframe class="ace stretch" data-mode="html"><fieldset>

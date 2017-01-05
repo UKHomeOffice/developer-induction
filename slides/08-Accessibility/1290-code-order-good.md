@@ -1,4 +1,4 @@
-## Code order ![](images/tick.jpg)
+## Code order ✔
 
 ![](images/given-names.jpg)
 

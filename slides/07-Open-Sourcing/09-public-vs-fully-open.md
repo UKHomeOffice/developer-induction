@@ -4,6 +4,5 @@
 - Good practice for open source code should include:
   - Documentation
   - Contrib Guidelines
-  - Signing commits
-  - Appropriate licence
+  - Appropriate licence (we use [MIT](https://opensource.org/licenses/MIT))
   - Communicate!

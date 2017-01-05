@@ -1,4 +1,4 @@
-## Semantic markup ![](images/cross.jpg)
+## Semantic markup ✖
 
 ![](images/immigration-status.jpg)
 <iframe class="ace stretch" data-mode="html"><p>Has your immigration status changed?</p>

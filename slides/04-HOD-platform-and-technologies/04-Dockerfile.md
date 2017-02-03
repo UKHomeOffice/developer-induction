@@ -7,7 +7,9 @@ RUN mkdir -p /app
 RUN chown -R app:app /app
 USER app
 WORKDIR /app
-COPY . /app
-RUN ./build.sh
-EXPOSE 3018
-CMD [npm, start]</iframe>
+COPY package.json .
+RUN npm install
+COPY . .
+RUN npm test
+EXPOSE 4000
+CMD npm start</iframe>

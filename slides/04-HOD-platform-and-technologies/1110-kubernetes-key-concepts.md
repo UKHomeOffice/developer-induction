@@ -5,7 +5,7 @@
 - Services →  Internal Load balancers to expose your app to Kubernetes land​
 - Ingress → External Load balancers to expose your app to the rest of the world​
 - Namespaces → Virtual Environments​
-- Clusters → Completely seperate Kubernetes installations
+- Clusters → Completely separate Kubernetes installations
 
-Read up on the Kubernetes documentation for more information!​  
+Read up on the Kubernetes documentation for more information!​
 http://kubernetes.io/docs/

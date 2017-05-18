@@ -1,6 +1,6 @@
 ## Workshops
 
-- (On boarding) Dev induction (4 DSAB, Digital Permissions, AFTC, Sponsorship, Proving Things)
+- (On boarding) Dev induction (DSAB, Digital Permissions, AFTC, Sponsorship, Proving Things)
   - At least every month
   - Anyone can join
 - Advanced DSP workshop (In progress)

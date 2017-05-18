@@ -6,7 +6,7 @@
 
 ### Handling
 - Separate by marking
-- Official Sensitive is a myth
+- Official Sensitive isn't a thing
 
 note:
  - It's important to separate documents/code of differeing protective markings as rather than elevating to the highest common dominator.

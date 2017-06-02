@@ -5,7 +5,7 @@ head.ready("js.cookie.js", function () {
     showNotes: true,
     multiplex: {
       secret: Cookies.get("secret") || null,
-      id: 'd6e0af17bc853141', // id, obtained from socket.io server
+      id: '18ecd586df86ab45', // id, obtained from socket.io server
       url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh' // Location of socket.io server
     }
   });

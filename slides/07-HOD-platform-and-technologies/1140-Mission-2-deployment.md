@@ -5,6 +5,6 @@ Make sure you have completed the developer getting started guide!​ http://bit.
 
 1. Use kd to deploy your application in one line​ https://github.com/UKHomeOffice/kd
 
-1. Deploy a sample application to the DSP​ http://bit.ly/2hbs3hj
+1. Deploy a sample application to the ACP http://bit.ly/2hbs3hj
 
 1. Delete everything you have deployed!​

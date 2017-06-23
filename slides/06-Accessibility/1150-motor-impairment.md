@@ -1,2 +1,2 @@
+$background-iframe:https://www.youtube-nocookie.com/embed/SPCQCjpDrB0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=1&amp;playlist=SPCQCjpDrB0$
 ## Motor Impairment
-<iframe class="stretch" src="https://www.youtube.com/v/SPCQCjpDrB0?version=3&amp;loop=1&amp;playlist=SPCQCjpDrB0&amp;autoplay=1&amp;controls=0&amp;showinfo=0" frameborder="0">[Video of a hand tremo](https://www.youtube.com/watch?v=SPCQCjpDrB0)</iframe>

@@ -33,3 +33,7 @@ body:not(.print-pdf) .speaker-notes {
 body.print-pdf .speaker-notes {
     position: relative !important;
 }
+
+.reveal .slide-background.present[style*='background-image'] {
+    opacity: 0.6;
+}

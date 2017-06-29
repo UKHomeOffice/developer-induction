@@ -34,53 +34,14 @@
     when:
       event: pull_request
 
-  deploy-to-prod:
-    image: busybox
-    commands:
-      - /bin/echo hello prod
-    when:
-      environment: dev-induction
-      event: deployment
-
-  deploy:
-    image: busybox
-    commands:
-      - /bin/echo hello ${ENV_NAME}
-    when:
-      environment: uat
-      event: deployment
-
-  first-step:
-    image: busybox
-    commands:
-      - echo hello > test.txt
-    when:
-      branch: master
-      event: push
-
-  second-step:
-    image: busybox
-    commands:
-      - cat test.txt
-    when:
-      branch: master
-      event: push
-
-  third-step:
-    image: quay.io/ukhomeofficedigital/kd:v0.2.2
-    commands:
-      - env
-    when:
-      branch: master
-      event: push
-
   deploy_to_uat:
     image: quay.io/ukhomeofficedigital/kd:v0.2.2
     environment:
       - KUBE_NAMESPACE=dev-induction
+      - APP_VERSION=${DRONE_COMMIT_SHA}
+      - KUBE_SERVER=https://kube-dev.dsp.notprod.homeoffice.gov.uk
     commands:
-      - cd kube-node-hello-world
-      - ./deploy.sh
+      - kd -f kube-templated/secret.yaml -f kube-templated/deployment.yaml -f kube-templated/service.yaml -f kube-templated/ingress.yaml
     when:
       environment: dev-induction
       event: deployment

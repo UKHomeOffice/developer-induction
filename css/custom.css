@@ -35,5 +35,5 @@ body.print-pdf .speaker-notes {
 }
 
 .reveal .slide-background.present[style*='background-image'] {
-    opacity: 0.6;
+    opacity: 0.1;
 }

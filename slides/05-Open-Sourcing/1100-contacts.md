@@ -1,5 +1,5 @@
 ## Contacts
 
 Open source strategy
-- [Chris Nesbitt-Smith](mailto:christopher.nesbitt-smith@digital.homeoffice.gov.uk)
-- [Robin Harrison](robin.harrison@digital.homeoffice.gov.uk)
+- [Andrew Moores](mailto:andrew.moores@digital.homeoffice.gov.uk)
+- [Oli Weighell](mailto:oli.weighell@digital.homeoffice.gov.uk)

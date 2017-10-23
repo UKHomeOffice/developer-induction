@@ -1,7 +1,7 @@
 ## How we operate
 
-1. consultancy (gather feedback)
-2. address (documentation, comms, etc.)
-3. communicate (training, workshops, etc.)
+1. contribution (from those who work in our area)
+2. leadership (of our job families)
+3. governance (training, workshops, guidance)
 
 

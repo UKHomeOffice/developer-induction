@@ -9,7 +9,7 @@ This repo contains the slides for developer induction, produced with prez/reveal
 ### Running as a server with docker
 ```
 docker build -t dev-induction . 
-docker run -ti -p 9000:80 dev-induction
+docker run -ti -p 9000:9000 dev-induction
 ```
 
 ## Editing the slides

@@ -1,4 +1,4 @@
-## Mission 3! Use a secret in your deployed application
+## Mission 4! Use a secret in your deployed application
 1. Create a kubernetes secret, making sure to template out the secret value in your secret yaml
 http://bit.ly/2h2CizD
 

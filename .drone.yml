@@ -1,10 +1,9 @@
 pipeline:
 
   my-build:
-    privileged: true
-    image: docker:1.12
+    image: docker:17.12.0
     environment:
-      - DOCKER_HOST=tcp://127.0.0.1:2375
+      - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
       - docker build -t developer-induction .
     when:
@@ -12,19 +11,21 @@ pipeline:
       event: push
 
   image_to_quay:
-    image: docker:1.12
+    image: docker:17.12.0
     environment:
-      - DOCKER_HOST=tcp://127.0.0.1:2375
+      - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
-      - docker login -u="ukhomeofficedigital+developer_induction" -p=${DOCKER_PASSWORD} quay.io
-      - docker tag developer-induction quay.io/ukhomeofficedigital/developer-induction:${DRONE_COMMIT_SHA}
-      - docker push quay.io/ukhomeofficedigital/developer-induction:${DRONE_COMMIT_SHA}
+      - docker login -u="ukhomeofficedigital+developer_induction" -p=$${DOCKER_PASSWORD} quay.io
+      - docker tag developer-induction quay.io/ukhomeofficedigital/developer-induction:$${DRONE_COMMIT_SHA}
+      - docker tag developer-induction quay.io/ukhomeofficedigital/developer-induction:latest
+      - docker push quay.io/ukhomeofficedigital/developer-induction:$${DRONE_COMMIT_SHA}
+      - docker push quay.io/ukhomeofficedigital/developer-induction:latest
     when:
       branch: master
       event: push
 
   deploy_to_dev:
-    image: quay.io/ukhomeofficedigital/kd:latest
+    image: quay.io/ukhomeofficedigital/kd:v0.8.0
     environment:
       - KUBE_SERVER=https://kube-dev.dsp.notprod.homeoffice.gov.uk
       - KUBE_NAMESPACE=dev-induction
@@ -35,11 +36,3 @@ pipeline:
     when:
       event: [deployment, push]
       branch: master
-
-services:
-  dind:
-    image: docker:1.12-dind
-    privileged: true
-    command:
-      - "-s"
-      - "overlay"

@@ -15,7 +15,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "phantomjs-prebuilt": "^2.1.13",
-    "prez": "chrisns/prez#973a69d524ab24783e78f411237bbf2c1fcd04d9"
+    "phantomjs-prebuilt": "^2.1.16",
+    "prez": "github:chrisns/prez#973a69d524ab24783e78f411237bbf2c1fcd04d9"
   }
 }

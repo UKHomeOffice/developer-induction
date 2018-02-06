@@ -12,6 +12,8 @@ pipeline:
 
   image_to_quay:
     image: docker:17.12.0
+    secrets:
+      - docker_password
     environment:
       - DOCKER_HOST=tcp://172.17.0.1:2375
     commands:
@@ -26,6 +28,8 @@ pipeline:
 
   deploy_to_dev:
     image: quay.io/ukhomeofficedigital/kd:v0.8.0
+    secrets:
+      - kube_token
     environment:
       - KUBE_SERVER=https://kube-dev.dsp.notprod.homeoffice.gov.uk
       - KUBE_NAMESPACE=dev-induction

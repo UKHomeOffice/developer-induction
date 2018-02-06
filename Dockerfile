@@ -1,4 +1,4 @@
-FROM quay.io/ukhomeofficedigital/nodejs-base:v6.9.1
+FROM quay.io/ukhomeofficedigital/nodejs-base:v8
 
 RUN rpm --rebuilddb && \
   yum -y update && \

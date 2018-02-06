@@ -7,7 +7,6 @@ pipeline:
     commands:
       - docker build -t developer-induction .
     when:
-      branch: master
       event: push
 
   image_to_quay:

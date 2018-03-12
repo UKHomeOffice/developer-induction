@@ -15,17 +15,12 @@ RUN rpm --rebuilddb && \
     which && \
   yum clean all
 
-COPY nginx/nginx.conf /etc/nginx/nginx.conf
-
-WORKDIR /app
+RUN useradd node && mkdir -p /usr/src/app && chown -R node /usr/src/app 
+WORKDIR /usr/src/app
+USER node
 
 COPY package.json .
-
 RUN npm install
-
 COPY . .
-
-RUN npm run build && \
-  mv slides.pdf build/
-
-CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
+RUN npm run build && mv slides.pdf build/
+CMD npm start

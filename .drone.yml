@@ -1,4 +1,9 @@
 pipeline:
+  lint_kube_yaml:
+    image: fedora:25
+    commands:
+      - dnf install -q -y yamllint
+      - "yamllint -d '{extends: default, rules: {line-length: {max: 700}}}' kube/"
 
   my-build:
     image: docker:17.12.0
@@ -25,17 +30,26 @@ pipeline:
       branch: master
       event: push
 
-  deploy_to_dev:
-    image: quay.io/ukhomeofficedigital/kd:v0.8.0
+  tagged_image_to_quay:
+    image: docker:17.09.0-ce
+    secrets:
+      - docker_password
+    environment:
+      - DOCKER_HOST=tcp://172.17.0.1:2375
+    commands:
+      - docker login -u="ukhomeofficedigital+acp_node_hello_world" -p=$${DOCKER_PASSWORD} quay.io
+      - docker tag acp-node-hello-world:$${DRONE_COMMIT_SHA} quay.io/ukhomeofficedigital/acp-node-hello-world:$${DRONE_TAG}
+      - docker push quay.io/ukhomeofficedigital/acp-node-hello-world:$${DRONE_TAG}
+    when:
+      event: tag
+
+  deploy_to_kube:
+    image: quay.io/ukhomeofficedigital/kd:v0.7.0
     secrets:
       - kube_token
-    environment:
-      - KUBE_SERVER=https://kube-dev.dsp.notprod.homeoffice.gov.uk
-      - KUBE_NAMESPACE=dev-induction
-      - INSECURE_SKIP_TLS_VERIFY=true
     commands:
-      - cd kube
-      - kd -f deployment.yml -f ingress.yml -f service.yml
+      - apk update
+      - apk add curl
+      - ./deploy.sh
     when:
-      event: [deployment, push]
-      branch: master
+      event: deployment

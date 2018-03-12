@@ -7,8 +7,8 @@ metadata:
   name: developer-induction-service
 spec:
   ports:
-  - name: https
-    port: 443
-    targetPort: https
+    - name: https
+      port: 443
+      targetPort: https
   selector:
     name: developer-induction

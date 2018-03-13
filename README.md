@@ -1,3 +1,5 @@
+## Note: This is a mirror of the developer induction project (https://github.com/UKHomeOffice/developer-induction), all credit goes to their manatainers.
+
 # Developer Induction
 This repo contains the slides for developer induction, produced with prez/revealjs.
 

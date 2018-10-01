@@ -8,18 +8,12 @@ before_script:
 script:
   - npm install
   - npm run build
-
-after_script:
+  - cp slides.pdf build/
   - cd build
   - git init
   - git add .
   - git commit -m "Deploy to Github Pages"
-
-deploy:
-  provider: script
-  script: git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
-  on:
-    branch: master
+  - "[[ $TRAVIS_BRANCH =~ (master|^v[0-9]+.[0-9]+) ]] && git push --force --quiet https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git master:gh-pages"
 
 env:
   global:

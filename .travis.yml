@@ -1,0 +1,27 @@
+language: node_js
+node_js: lts/*
+
+before_script:
+  - git config --global user.email "nobody@nobody.org"
+  - git config --global user.name "Travis CI"
+
+script:
+  - npm install
+  - npm run build
+
+after_script:
+  - cd build
+  - git init
+  - git add .
+  - git commit -m "Deploy to Github Pages"
+
+deploy:
+  provider: script
+  script: git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
+  on:
+    branch: master
+
+env:
+  global:
+    - GITHUB_REPO: "UKHomeOffice/developer-induction"
+    - secure: LtjtehbUhk00r7OUzvfFytE4sAh5Tu/COc33wVXBv5WA4Y723yIMjJILupe5JbyFLGVJAH6rnjxJXrhqzQF+PnpYw3B/u+DbUkAuD0AFg+F6xRiUlNsstk5msu0PRE3rnSd1uibs4++kzM7elLt7TfEbRDIBFCU7N5fTh+eysa36Fm5KRGi03qg7IEuuisaScvwSQZm+MKXLLgRsRSLu3Hve121bBol/itxRXFQJcFZ4H7RKB0V4A6NHe9DzOJmD8426598V9N/zGxTVrEV6myhSLc+IXxyRRVRQFn36KmnPRqQ3QYxpC5opaK7EwqY4Ri2HJp6pIA0Vn0CaxSmhYO9gwYP70AP/qQXrNxgOstcQ5fNvadzwEFmMV6rWXawaZp/zTawMtnkui2Mvsz68M7hrvsCUQCuAOdVEjEIHGCs0EaPc2O/5up9hdy0dBwD9FXVnUN3tdCXmvPMQE1gEV/z68++s4TF+zHPDT+lSd7bxJ8g9P/Eo1kUhexGkoD4f0nCRuQWIdFegY+kBGj4r1UKdHjar6sqBdQLhGSvbnG6BMbgoQnO7SohzI+Czb+d6n7tha1YkT2//U8Nhuf18DOIacaWVYkVtcp87eG1ttQPx5hWjt+G/EsgZXwkDmo5HgrMG+vtG80VneJuGauH5jOlVFr+Q/1OSebuKjGeb4us=

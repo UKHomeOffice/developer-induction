@@ -1,4 +1,6 @@
 # Developer Induction
+[![Build Status](https://travis-ci.org/UKHomeOffice/developer-induction.svg?branch=master)](https://travis-ci.org/UKHomeOffice/developer-induction)
+
 This repo contains the slides for developer induction, produced with prez/revealjs.
 
 ## Viewing the slides

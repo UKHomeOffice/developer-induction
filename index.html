@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>developer-induction</title>
+
+    <meta name="description" content="This repo contains the slides for developer induction, produced with prez/revealjs.">
+    <meta name="author" content="travis">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="css/highlight/styles/zenburn.css" id="highlight-theme">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <link rel="stylesheet" href="js/dynamic-theme.js"><link rel="stylesheet" href="css/custom.css">
+
+  </head>
+
+  <body>
+
+    <div class="reveal">
+      <div class="slides"><section id="chapter-introduction" class="chapter">
+<section id="introduction-developer-introduction" class="slide" data-has-notes="false">
+<h1>Developer Induction</h1><p><code>Press S to see the notes</code></p>
+</section>
+
+<section id="introduction-introductions" class="slide" data-background="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hello_My_Name_Is_%2815283079263%29.jpg/640px-Hello_My_Name_Is_%2815283079263%29.jpg" data-has-notes="false">
+<h1>Introductions</h1><p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Hello_My_Name_Is_%2815283079263%29.jpg/640px-Hello_My_Name_Is_%2815283079263%29.jpg" alt=""></p>
+</section>
+
+<section id="introduction-agenda" class="slide" data-has-notes="false">
+<h1>Agenda</h1><table>
+<thead>
+<tr>
+<th>Time</th>
+<th style="text-align:center">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20mins</td>
+<td style="text-align:center">Welcome and introductions</td>
+</tr>
+<tr>
+<td>15mins</td>
+<td style="text-align:center"><a href="#/team-coe-eanda-team">Centre of Excellence</a></td>
+</tr>
+<tr>
+<td>15mins</td>
+<td style="text-align:center"><a href="#/how-we-work-how-we-work">How we work</a></td>
+</tr>
+<tr>
+<td>20mins</td>
+<td style="text-align:center"><a href="#/securing-applications-security">Security</a></td>
+</tr>
+<tr>
+<td>20mins</td>
+<td style="text-align:center"><a href="#/open-sourcing-open-sourcing">Open source</a></td>
+</tr>
+<tr>
+<td>30mins</td>
+<td style="text-align:center"><a href="#/accessibility-accessibility">Accessibility</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="introduction-agenda" class="slide" data-has-notes="false">
+<h1>Agenda</h1><table>
+<thead>
+<tr>
+<th>Time</th>
+<th style="text-align:center">Topic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>45mins</td>
+<td style="text-align:center">Lunch</td>
+</tr>
+<tr>
+<td>3hrs</td>
+<td style="text-align:center"><a href="#/hod-platform-and-technologies-hod-platform-and-technologies">Platform</a> - <a href="#/hod-platform-and-technologies-mission-1-docker">Mission 1</a>, <a href="#/hod-platform-and-technologies-mission-2-deployment">Mission 2</a>, <a href="#/hod-platform-and-technologies-mission-3-secrets">Mission 3</a></td>
+</tr>
+<tr>
+<td>1hr</td>
+<td style="text-align:center"><a href="#/continuous-integration-ci">Continuous Integration</a> - <a href="#/continuous-integration-mission-4-drone">Mission 4</a></td>
+</tr>
+<tr>
+<td>30mins</td>
+<td style="text-align:center"><a href="#/thanks">Closing &amp; Survey</a></td>
+</tr>
+</tbody>
+</table>
+</section>
+
+<section id="introduction-wifi" class="slide" data-has-notes="true">
+<h1>GovWifi</h1><p><img src="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/59560/OSX1.png" alt=""></p><aside class="notes"><p>signup@wifi.service.gov.uk and sponsor@wifi.service.gov.uk</p></aside>
+</section>
+
+<section id="introduction-housekeeping" class="slide" data-has-notes="true">
+<h1>Housekeeping</h1><aside class="notes"><ul>
+<li>fire exits</li>
+<li>toilets</li>
+<li>water</li>
+<li>it&#39;s okay to leave</li>
+</ul></aside>
+</section>
+
+<section id="introduction-dsp-acp" class="slide" data-has-notes="true">
+<h1><del>DSP</del> ACP</h1><aside class="notes"><p>The &#39;digital services platform&#39; has been renamed, we&#39;re still getting used to that so may use the two interchangeably.</p></aside>
+</section>
+</section>
+
+<section id="chapter-team" class="chapter">
+<section id="team-coe-team" class="slide" data-has-notes="false">
+<h1>Centre of Excellence</h1>
+</section>
+
+<section id="team-who-are-we" class="slide" data-has-notes="false">
+<h2>Who are we?</h2><p>Specialists across all of the DDaT profession, from software engineers to user researchers
+to designers and many more.</p>
+<p>You can find out more about what we offer on the COE website:<br><a href="https://ukhomeoffice.github.io/coe/">https://ukhomeoffice.github.io/coe/</a></p>
+<p>But today we&#39;re going to talk specifically about the software engineers in the COE</p>
+</section>
+
+<section id="team-why-do-we-exist" class="slide" data-has-notes="true">
+<h2>Why do we exist?</h2><h3>Our aim – to enable delivery teams to deliver higher quality software and services more quickly</h3><aside class="notes"><p>We’re still researching how best to do this, but have done a lot already</p>
+<p>Generally we will be looking at:</p>
+<ul>
+<li>Central services, products, libraries, and tooling</li>
+<li>Supporting projects to use these services, and align to best practice</li>
+<li>Supporting consistently high quality recruitment</li>
+</ul></aside>
+</section>
+
+<section id="team-how-we-operate" class="slide" data-has-notes="false">
+<h2>How we operate</h2><ol>
+<li>contribution (from those who work in our area)</li>
+<li>leadership (of our job families)</li>
+<li>governance (training, workshops, guidance)</li>
+</ol>
+</section>
+
+<section id="team-what-we-have-done-copy" class="slide" data-has-notes="false">
+<h2>What we have done?</h2>
+</section>
+
+<section id="team-consulting" class="slide" data-has-notes="false">
+<h2>Consulting</h2><ul>
+<li>Mostly Ad-hoc</li>
+</ul>
+</section>
+
+<section id="team-workshop" class="slide" data-has-notes="false">
+<h2>Workshops</h2><ul>
+<li>(On boarding) Dev induction (DSAB, Digital Permissions, AFTC, Sponsorship, Proving Things)<ul>
+<li>At least every month</li>
+<li>Anyone can join</li>
+</ul>
+</li>
+<li>Advanced ACP workshop (In progress)</li>
+<li>Intro to ACP (IPT, DSAB, Live services, HMPO, RT, GE, EVW, Digital Permissions)<ul>
+<li>AWS office, 2 days, 8hrs</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="team-traning" class="slide" data-has-notes="false">
+<h2>Training</h2><ul>
+<li>Docs on Drone</li>
+<li>Docs on ACP</li>
+<li>Technical code of practice</li>
+<li>Technical service requirements</li>
+</ul>
+</section>
+
+<section id="team-tools" class="slide" data-has-notes="false">
+<h2>Tools</h2><ul>
+<li><a href="https://github.com/UKHomeOffice/ho-example-dashboard">Dashboard</a></li>
+<li><a href="https://github.com/UKHomeOffice/repo-security-scanner">Secret checker</a> - Open source risk mitigation, monitoring code repositories</li>
+</ul>
+</section>
+
+<section id="team-recruitement" class="slide" data-has-notes="false">
+<h2>Recruitment</h2><ul>
+<li>Rolling recruitment</li>
+<li>2MS, Croydon, Sheffield</li>
+<li>Perms &amp; contractors</li>
+</ul>
+</section>
+
+<section id="team-communitcation" class="slide" data-has-notes="false">
+<h2>Comms</h2><ul>
+<li>Monthly newsletter</li>
+<li>Surveys</li>
+</ul>
+</section>
+
+<section id="team-discovery" class="slide" data-has-notes="false">
+<h2>Discovery Work</h2><ul>
+<li>Modern Slavery</li>
+<li>Sharing police data</li>
+<li>Queen’s warehouse</li>
+</ul>
+</section>
+
+<section id="team-stay-in-touch" class="slide" data-has-notes="true">
+<h2>Stay in touch</h2><ul>
+<li>[Centre of Excellence site] (<a href="https://ukhomeoffice.github.io/coe/">https://ukhomeoffice.github.io/coe/</a>)</li>
+<li><a href="centreofexcellencecentral@digital.homeoffice.gov.uk">Centre of Excellence team</a></li>
+<li><a href="https://github.com/UKHomeOffice/application-container-platform-bau/projects/1">https://github.com/UKHomeOffice/application-container-platform-bau/projects/1</a></li>
+<li><a href="https://github.com/UKHomeOffice/central-devopsteam-board/projects">Central devops team</a></li>
+<li><a href="http://www.homeofficesurveys.homeoffice.gov.uk/s/JVIBL/">Survey</a></li>
+<li>Slack (<a href="https://hod-dsp.slack.com/">HOD-DSP</a>, <a href="https://homeofficedigital.slack.com">Home Office Digital</a>)</li>
+</ul><aside class="notes"><p>Demo COE site - training and resources</p></aside>
+</section>
+</section>
+
+<section id="chapter-how-we-work" class="chapter">
+<section id="how-we-work-how-we-work" class="slide" data-has-notes="false">
+<h1>How do developers in the Home Office work?</h1>
+</section>
+
+<section id="how-we-work-pair-programming" class="slide" data-has-notes="false">
+<h2>Pair programming</h2><p><img src="images/pair-programming.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-remote-pairing" class="slide" data-background="https://upload.wikimedia.org/wikipedia/commons/3/3b/Appleremotes.JPG" data-has-notes="true">
+<h1>Remote pairing</h1><ul>
+<li><a href="https://www.screenhero.com">Screenhero</a></li>
+<li><a href="https://chrome.google.com/webstore/detail/chrome-remote-desktop/gbchcmhmhahfdphkhkmpfmihenigjmpp?hl=en">Chrome Remote Desktop</a></li>
+</ul><aside class="notes"><p>Some teams are using screenhero and others Chrome Remote Desktop to remote pair, it can work really well</p></aside>
+</section>
+
+<section id="how-we-work-bdd-tdd" class="slide" data-has-notes="false">
+<h2>BDD and TDD</h2><p><img src="images/bdd-tdd.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-clean-code" class="slide" data-has-notes="false">
+<h2>Clean Code</h2><p><img src="images/clean-code.jpg" alt=""></p>
+</section>
+
+<section id="how-we-work-branching" class="slide" data-has-notes="false">
+<h2>Branching</h2><ul>
+<li>Protect your master branch​<ul>
+<li>No force pushing to master​</li>
+<li>Reviews required on PRs before they can be merged​</li>
+</ul>
+</li>
+<li>Develop each story on a new branch​</li>
+<li>Rebase/merge from master regularly to avoid merge hell​</li>
+</ul>
+</section>
+
+<section id="how-we-work-expectations" class="slide" data-has-notes="false">
+<h2>Expectations</h2><ul>
+<li>Understand the platform​</li>
+<li>Responsible for security​</li>
+<li>Responsible for documentation​</li>
+<li>Collaborating with others to complete stories</li>
+<li>Reach out to other teams, identify opportunities to share best practice and re-use components​</li>
+<li>Publicise libraries and services​</li>
+<li>Aspiration for up to 20% of time on non-project work​</li>
+<li>Participate in away days​</li>
+</ul>
+</section>
+
+<section id="how-we-work-in-return" class="slide" data-has-notes="false">
+<h2>In return you get...</h2><ul>
+<li>To work with really good people​</li>
+<li>Flexible working​</li>
+<li>To use interesting tech​</li>
+<li>To work with other professions​</li>
+<li>An opportunity to give back to wider Home Office, Cross Government, and beyond...​</li>
+</ul>
+</section>
+
+<section id="how-we-work-tech-we-use" class="slide" data-has-notes="false">
+<h2>The technology we use</h2><ul>
+<li>Java 8, Scala, or Javascript​</li>
+<li>Java – Spring, Dropwizard​</li>
+<li>Scala – Play, Spray​</li>
+<li>Javascript​<ul>
+<li>Back end – node, express​</li>
+<li>Front end – angular, react​</li>
+</ul>
+</li>
+<li>Docker</li>
+<li>Kubernetes</li>
+</ul>
+</section>
+
+<section id="how-we-work-technology-stack" class="slide" data-has-notes="false">
+<h2>The HO technology stack</h2><p>More detail on the technology stack is kept on trello, showing which technologies we are investing in and which are on
+their way out</p>
+<p><a href="https://ukhomeoffice.github.io/coe/resources/tech-stack/">https://ukhomeoffice.github.io/coe/resources/tech-stack/</a></p>
+<p>Note you will need to request access from the <a href="mailto:CentreOfExcellenceCentral@digital.homeoffice.gov.uk">Centre of Excellence</a> to be able to view this</p>
+</section>
+</section>
+
+<section id="chapter-securing-applications" class="chapter">
+<section id="securing-applications-security" class="slide" data-has-notes="false">
+<h1>Securing applications in the Home Office</h1>
+</section>
+
+<section id="securing-applications-markings" class="slide" data-has-notes="true">
+<h2>Protective Markings</h2><ul>
+<li>Official</li>
+<li><del>Official Sensitive</del></li>
+<li>Secret</li>
+<li>Top Secret</li>
+</ul>
+<h3>Handling</h3><ul>
+<li>Separate by marking</li>
+<li>Official Sensitive isn&#39;t a thing</li>
+</ul><aside class="notes"><ul>
+<li>It&#39;s important to separate documents/code of differeing protective markings as rather than elevating to the highest common dominator.<ul>
+<li>Official sensitive isn&#39;t a real thing, it&#39;s Official with a handling caveat, it is for use with a <strong>limited</strong> subset of OFFICIAL that if it were lost, stolen or published in the media could have more damaging consequences for individuals, organisation or government.</li>
+<li>Your code with <strong>very rare</strong> exceptions is Official.</li>
+<li>It&#39;s important to challenge and understand explicity what and why something is beyond Official.</li>
+</ul>
+</li>
+</ul></aside>
+</section>
+
+<section id="securing-applications-developing-at-the-home-office" class="slide" data-has-notes="false">
+<h2>Developing at the Home Office</h2><ul>
+<li><a href="http://bit.ly/2hrW60L">Acceptable use policy​</a></li>
+<li>Don&#39;t put live data on your personal device​</li>
+<li>Only access live/sensitive data under strict guidance​</li>
+<li>Understand the policies around where you should store your source code​</li>
+<li><a href="https://civilservicelearning.civilservice.gov.uk/learning-opportunities/responsible-information-general-user-0">Mandatory data training​</a></li>
+</ul>
+</section>
+
+<section id="securing-applications-git" class="slide" data-has-notes="false">
+<h2>Git</h2><ul>
+<li>Don’t put information such as passwords, IP addresses etc. in any repos​</li>
+<li>Sign commits</li>
+</ul>
+</section>
+
+<section id="securing-applications-app-design" class="slide" data-has-notes="false">
+<h2>Application Design</h2><ul>
+<li>Use established, well understood libraries and frameworks - e.g. <a href="https://github.com/UKHomeOfficeForms/hof">HOF</a> for forms​</li>
+<li>Small components with a clear, single responsibility are easier to understand, test and secure​</li>
+<li>Simple systems are easier to ​secure​</li>
+</ul>
+</section>
+
+<section id="securing-applications-general-protection" class="slide" data-has-notes="true">
+<h2>General protection</h2><ul>
+<li>Do not trust user input</li>
+<li>Reduce attack surface</li>
+<li>Follow <a href="https://www.gov.uk/government/publications/password-policy-simplifying-your-approach/password-policy-executive-summary">CESG best password guidance​</a></li>
+<li>Review <a href="https://www.owasp.org/index.php/Top10">OWASP top 10 exploits</a> for common flaws/attack vectors​</li>
+</ul>
+<p><img src="images/bobby-tables.jpg" alt=""></p><aside class="notes"><ul>
+<li>escape/ sanitise inputted data​</li>
+<li>if you do not use them, remove or disable services, protocols, and functionality​</li>
+</ul></aside>
+</section>
+
+<section id="securing-applications-owasp-top-3" class="slide" data-has-notes="true">
+<h2>OWASP Top 3</h2><ol>
+<li>Injection</li>
+<li>Broken Authentication and Session Management</li>
+<li>Cross-site Scripting (XSS)</li>
+</ol><aside class="notes"><ol>
+<li>Injection flaws, such as SQL, OS, and LDAP injection occur when untrusted data is sent to an interpreter as part of the command or query. The attacker&#39;s hostile data can trick the interpreter into excecuting unintended commands or accessing data without proper authorization.</li>
+<li>Application functions related to authentication and session management are often not implemented correctly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume users&#39; identities.</li>
+<li>XSS flaws occur when an application takes untrusted data and sends it to a web browser without proper validation or escaping. XSS allows attackers to execute scripts in the victim&#39;s browser which can hijack user sessions, deface web sites, or redirect the user to malicious sites.</li>
+</ol></aside>
+</section>
+
+<section id="securing-applications-validation" class="slide" data-has-notes="true">
+<h2>Validation</h2><ul>
+<li>Server-side validation of all inputs</li>
+<li>Accept known good input rather than reject known bad input​</li>
+<li>Always re-validate previously entered form data</li>
+</ul><aside class="notes"><ul>
+<li>Server-side validation of all inputs, including headers, cookies, redirects​</li>
+<li>Always re-validate previously entered form data in case it has been surreptitiously altered; hidden fields should be validated too​</li>
+</ul></aside>
+</section>
+
+<section id="securing-applications-cookies" class="slide" data-has-notes="true">
+<h2>Cookies</h2><ul>
+<li>Sensitive session data stored on the server</li>
+<li>Use secure, signed, httpOnly cookies</li>
+<li>No sensitive information in 3rd party cookies​</li>
+</ul><aside class="notes"><ul>
+<li>Sensitive session data stored on the server so we retain control of the session​</li>
+<li>use secure cookies when possible to avoid cookies being read in transmission &amp; from being accessible to client-side scripts​</li>
+</ul></aside>
+</section>
+
+<section id="securing-applications-encryption" class="slide" data-has-notes="false">
+<h2>Encryption</h2><ul>
+<li>Use https (<a href="https://tools.ietf.org/html/rfc5246">TLS v1.2</a>) to encrypt data in motion</li>
+<li>Encrypting data at rest may be necessary</li>
+</ul>
+</section>
+
+<section id="securing-applications-testing" class="slide" data-has-notes="false">
+<h2>Security testing</h2><ul>
+<li>Penetration tests by external companies are performed for projects periodically</li>
+<li>We also do some automated security testing, guidance here:<ul>
+<li><a href="http://bit.ly/2eCq6t3">http://bit.ly/2eCq6t3</a></li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="securing-applications-data-protection" class="slide" data-has-notes="true">
+<h2>Data protection</h2><p>You need to:</p>
+<ul>
+<li>Know the retention and removal policy​</li>
+<li>Know what data is stored where</li>
+<li>Know who will be accessing the service and how</li>
+<li>Store and use the minimum amount of data required to fulfil the user need​</li>
+<li>Implement a need to know policy</li>
+</ul>
+<p><strong>The Information Asset Owner (IAO) is the ultimate decision maker</strong></p><aside class="notes"><ul>
+<li>Understand the data that will be used, its retention and removal policy​</li>
+<li>Be aware of what data is stored where - our data isn’t always stored in our premises and in the UK ​</li>
+<li>Understand who will be accessing the service / data, with what devices via what networks / 3rd party services​</li>
+<li>Only store and use the minimum amount of data required to fulfil the user need​</li>
+<li>Restrict users to only being able to view the data they need​</li>
+<li>Understanding who Information Asset Owner will drive some of ^^^ decisions</li>
+</ul>
+<p>the service manager for your project can tell you who the IAO is​</p></aside>
+</section>
+
+<section id="securing-applications-google-gruyere" class="slide" data-has-notes="false">
+<h2>Google Gruyere​</h2><ul>
+<li>A sandboxed, test environment (to store notes about cheese) to get a better understanding of common vulnerabilities​</li>
+<li><a href="https://google-gruyere.appspot.com​">https://google-gruyere.appspot.com​</a></li>
+<li>Practice exploiting:​<ul>
+<li>XSS​</li>
+<li>Injection​</li>
+<li>CSRF​</li>
+<li>cookie manipulation​</li>
+<li>elevation of privilege​</li>
+<li>path traversal​</li>
+<li>ajax vulnerabilities... and more!​</li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+<section id="chapter-open-sourcing" class="chapter">
+<section id="open-sourcing-open-sourcing" class="slide" data-has-notes="false">
+<h1>Open Source</h1><p>Coding in the open</p>
+</section>
+
+<section id="open-sourcing-open-gov" class="slide" data-has-notes="false">
+<h2>Open Government</h2><p><img src="images/open-gov.jpg" alt=""></p>
+</section>
+
+<section id="open-sourcing-choosing-software" class="slide" data-has-notes="false">
+<h2>Choosing software</h2><p>&quot;Where appropriate, government will procure open source solutions. When used in conjunction with compulsory open 
+standards, open source presents significant opportunities for the design and delivery of interoperable solutions&quot;</p>
+<p><a href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/85968/uk-government-government-ict-strategy_0.pdf">Government ICT Strategy</a></p>
+</section>
+
+<section id="open-sourcing-building-software" class="slide" data-has-notes="false">
+<h2>Building software</h2><p>&quot;Make all new source code open and reusable, and publish it under appropriate licences (or give a convincing explanation as to why this can&#39;t be done for specific subsets of the source code)&quot;</p>
+<p><a href="https://www.gov.uk/service-manual/service-standard#criterion-8">Digital Service Standard #8</a></p>
+</section>
+
+<section id="open-sourcing-home-office-stance" class="slide" data-has-notes="false">
+<h2>And the Home Office&#39;s stance...?</h2><p><img src="images/open-by-default.jpg" alt=""></p>
+</section>
+
+<section id="open-sourcing-not-open-source" class="slide" data-has-notes="false">
+<h2>When is it ok to not open source?</h2><p><a href="https://gds.blog.gov.uk/2014/10/08/when-is-it-ok-not-to-open-all-source-code/">GDS recommend not opening up</a>:</p>
+<ul>
+<li>Config that relates to security, versions, firewalls</li>
+<li>Code that performs a security enforcing function</li>
+<li>Code that might reveal unannounced policy (build it for open, just don&#39;t release yet)</li>
+</ul>
+<p>If unsure please ask us!</p>
+</section>
+
+<section id="open-sourcing-private-code" class="slide" data-has-notes="false">
+<h2>Private Code - gitlab</h2><p><img src="images/gitlab.png" alt=""></p>
+</section>
+
+<section id="open-sourcing-public-code" class="slide" data-has-notes="false">
+<h2>Public Code</h2><p><img src="images/github.jpg" alt=""></p>
+</section>
+
+<section id="open-sourcing-public-vs-fully-open" class="slide" data-has-notes="false">
+<h2>Public Code vs Full Open</h2><ul>
+<li>Fully open sourced (as opposed to &#39;coding in the open&#39;) means supporting a community</li>
+<li>Good practice for open source code should include:<ul>
+<li>Documentation</li>
+<li>Contrib Guidelines</li>
+<li>Appropriate licence (we use <a href="https://opensource.org/licenses/MIT">MIT</a>)</li>
+<li>Communicate!</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="open-sourcing-further-reading" class="slide" data-has-notes="false">
+<h2>Further reading...</h2><ul>
+<li><a href="https://www.gov.uk/government/publications/technology-code-of-practice/technology-code-of-practice#make-things-open">Gov UK tech code of practice, number 3 - making things open</a></li>
+<li><a href="https://www.ncsc.gov.uk/guidance/open-source-software-%E2%80%93-exploring-risk-good-practice-guide-38">CESG guide to open source and risk</a></li>
+<li><a href="https://www.gov.uk/service-manual/technology/making-source-code-open-and-reusable">Service manual on open source</a></li>
+<li><a href="https://www.gov.uk/service-manual/service-standard#criterion-8">Service standard - make all new code open</a></li>
+<li>Blog posts<ul>
+<li><a href="https://gds.blog.gov.uk/2012/10/12/coding-in-the-open/">Coding in the open</a></li>
+<li><a href="https://gds.blog.gov.uk/2014/10/08/when-is-it-ok-not-to-open-all-source-code/">When is it ok to not open source all code</a></li>
+<li><a href="https://hodigital.blog.gov.uk/2016/07/15/the-governments-role-in-open-source/">GOV role in Open Source</a></li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="open-sourcing-contacts" class="slide" data-has-notes="false">
+<h2>Contacts</h2><p>Open source strategy</p>
+<ul>
+<li><a href="mailto:andrew.moores@digital.homeoffice.gov.uk">Andrew Moores</a></li>
+<li><a href="mailto:oli.weighell@digital.homeoffice.gov.uk">Oli Weighell</a></li>
+</ul>
+</section>
+</section>
+
+<section id="chapter-accessibility" class="chapter">
+<section id="accessibility-accessibility" class="slide" data-has-notes="false">
+<h1>Accessibility</h1>
+</section>
+
+<section id="accessibility-minion" class="slide" data-has-notes="false">
+<p><img src="images/minion.jpg" alt=""></p>
+<h2>Equal Access for all</h2>
+</section>
+
+<section id="accessibility-all-kinds-of-people" class="slide" data-has-notes="false">
+<h2>All kinds of people</h2><p><img src="images/people.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-numbers" class="slide" data-has-notes="false">
+<h2>11m</h2><p>people with a limiting long term illness, impairment, or disability
+<img src="images/more-people.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-civil-servants" class="slide" data-has-notes="false">
+<h2>16%</h2><p>working age adults have a disability</p>
+<ul>
+<li>8.8% of civil servants</li>
+<li>45% of adults over state pension age</li>
+</ul>
+</section>
+
+<section id="accessibility-numbers-are-wrong" class="slide" data-has-notes="true">
+<h2>Everything I just told you is wrong</h2><p>(but it&#39;s the best numbers we&#39;ve got right now)</p>
+<h4>Registered disability != Accessibility need</h4><aside class="notes"><ul>
+<li>Registering or even self identifying is quite different to just having a need.</li>
+<li>Doesn&#39;t necessarily affect how they interact how they&#39;ll with your web service.</li>
+<li>An accessibility need could be a potentially temporary impairment, like not having put on your glasses to broken bones</li>
+</ul></aside>
+</section>
+
+<section id="accessibility-the-law" class="slide" data-has-notes="false">
+<h2>It&#39;s the law</h2><ul>
+<li><a href="http://www.legislation.gov.uk/ukpga/2010/15/contents">Equality Act 2010</a></li>
+<li><a href="https://www.gov.uk/guidance/equality-act-2010-guidance#public-sector-equality-duty">Public Sector Equality Duty</a></li>
+<li><a href="https://www.gov.uk/government/organisations/home-office/about/equality-and-diversity">Home Office Diversity Strategy</a></li>
+<li>HODDAT Targets</li>
+<li><a href="https://www.gov.uk/service-manual/service-standard/create-a-service-thats-simple">Service Assessments</a></li>
+</ul>
+</section>
+
+<section id="accessibility-wcag" class="slide" data-has-notes="false">
+<h2>W3C Web Accessibility Initiative​</h2><ul>
+<li><a href="https://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines 2.0</a>​</li>
+<li>AA standard is expected ​</li>
+</ul>
+</section>
+
+<section id="accessibility-types-of-impairments" class="slide" data-has-notes="false">
+<h2>Types of impairments</h2><p>(that affect common use of a website)</p>
+<ul>
+<li>Cognitive</li>
+<li>Motor</li>
+<li>Visual</li>
+</ul>
+<p>​</p>
+</section>
+
+<section id="accessibility-javascript" class="slide" data-has-notes="true">
+<h2>JavaScript</h2><ul>
+<li><p>1 in 93 users won&#39;t get JavaScript enhancements</p>
+</li>
+<li><p>Why?:</p>
+<ul>
+<li>Some people turn it off, we should respect that</li>
+<li>Device/software/version limitation</li>
+<li>Network issues</li>
+<li>ISP limitations</li>
+<li>Browser plugin/firewall/adblock/etc interferring</li>
+</ul>
+</li>
+</ul><aside class="notes"><p>From the GDS Service Manual <a href="https://www.gov.uk/service-manual/technology/using-progressive-enhancement#dont-assume-users-turn-off-javascript">Using progressive enhancement</a></p>
+<p>You shouldn’t assume the reason for designing a site that works without CSS or JavaScript (or anything else) is because a user chooses to switch these off.</p>
+<p>There are many situations when extra layers can fail to load or are filtered. This can happen due to:</p>
+<ul>
+<li>Temporary network errors</li>
+<li>DNS lookup failures</li>
+<li>overload or downtime affecting the server where the resource is found, meaning it fails to respond in time or at all</li>
+<li>corporate firewalls blocking, removing or altering content (large institutions like banks or government departments may use these)</li>
+<li>mobile network providers resampling images and altering content to speed up load times and reduce bandwidth usage</li>
+<li>personal firewalls or antivirus software altering or blocking content</li>
+<li><p>internet providers inserting their own code into the page that accidentally conflicts with your own</p>
+<p>Of course, some users turn off features in their browsers deliberately - you should respect their decision and make sure they can still use your service.</p>
+</li>
+</ul></aside>
+</section>
+
+<section id="accessibility-congitve" class="slide" data-has-notes="true">
+<h2>Cognitive - 60s dyslexia test</h2><div style="text-align:left">
+<p>Moud a text-ouly sight bee ideale for soweoue mith reabing bisorber? Harblee. Iwages are uot dab for accessabilledea. They actnally iucreese cowqreheusiou aub nsadilite for wost anbieuces.</p>
+<p>Mhat wauy qeopqle bo uot kuom, throngh, it there is wuch mor at the accessability for au iwage theu jnst its alt text. Sowe qeople mroughly assnwe that iwages are dab for accessedilite, siunce alt text esseutially reqlaces the iwage mith a text-ouly versiou of that iwage</p>
+<p>Bye Panl Bohwau</p>
+</div>
+
+<p><a href="webaim.org/simulations/dyslexia-sim.html">Credit</a></p><aside class="notes"><p>Thiss is how someone with dyslexia might read your text</p>
+<p>Would a text-only site be ideal for someone with a reading disorder? Hardly. Images are not bad for accessibility. They actually increase comprehension and usability for most audiences.</p>
+<p>What many people do not know, though, is there is much more to the accessibility of an image than just its alt text. Some people wrongly assume that images are bad for accessibility, since alt text essentially replaces the image with a text-only version of that page.</p>
+<p>By Paul Bohman</p>
+<p>This should feed into how you design content and understand the speed that someone can complete a task, think session timeouts etc.</p></aside>
+</section>
+
+<section id="accessibility-cognitive" class="slide" data-has-notes="true">
+<h2>Cognitive - distractions</h2><div style="text-align:right; display:block; width:50%; float:left">Don&#39;t put text you want people to read next to something that could be distracting</div>
+
+<div style="display:block; float:left;">
+<img src="images/distraction.gif" alt="Animated gif">
+</div><aside class="notes"><p>People with ADHD may have a hard time focusing on text when there is something attention grabbing next to it</p></aside>
+</section>
+
+<section id="accessibility-italics" class="slide" data-has-notes="false">
+<h2>Italics ✖</h2><div style="font-size:0.9em">
+<p style="font-style:italic; text-align:left">The same font, at the same point size on a Mac appears smaller than on most Windows machines.</p>
+
+<p style="font-style:italic; text-align:left">The &quot;logical resolution&quot; of a Mac is 72dpi, while the Windows default is 96dpi.</p>
+
+<p style="font-style:italic; text-align:left">It is essentially impossible to display text identically on all systems. It doesn&#39;t matter, though.</p>
+
+<p style="font-style:italic; text-align:left">What?</p>
+
+<p style="font-style:italic; text-align:left">If you are concerned about the exact appearance of a webpage, you might not be thinking about adaptive pages.</p>
+</div>
+</section>
+
+<section id="accessibility-alignment" class="slide" data-has-notes="false">
+<h2>Line height and alignment ✖</h2><p style="line-height:3em; text-align:left; font-size:0.75em; border: 1px solid black">The first duty of the government is to keep citizens safe and the country secure. The Home Office has been at the front line of this endeavour since 1782. As such, the Home Office plays a fundamental role in the security and economic prosperity of the United Kingdom.
+</p>
+</section>
+
+<section id="accessibility-alignment" class="slide" data-has-notes="true">
+<h2>Line height and alignment ✖</h2><p style="text-align:justify; font-size:0.75em; border: 1px solid black">The first duty of the government is to keep citizens safe and the country secure. The Home Office has been at the front line of this endeavour since 1782. As such, the Home Office plays a fundamental role in the security and economic prosperity of the United Kingdom.
+</p><aside class="notes"><p>first one is too much space between lines, so its hard to know its a paragraph or a connected sentence.</p>
+<p>second one is fully justified text which is hard to read especially when its wide (not a thin newspaper column)</p></aside>
+</section>
+
+<section id="accessibility-good-typography" class="slide" data-has-notes="false">
+<h2>Better example of typography ✔</h2><div style="text-align:left; padding:1em; font-size:0.75em; border: 1px solid black">
+<p>The first duty of the government is to keep citizens safe and the country secure. The Home Office has been at the front line of this endeavour since 1782. As such, the Home Office plays a fundamental role in the security and economic prosperity of the United Kingdom.</p>
+
+<p>The Home Office is the lead government department for immigration and passports, drugs policy, crime, fire, counter-terrorism and police.</p>
+</div>
+</section>
+
+<section id="accessibility-motor-impairment" class="slide" data-background-iframe="https://www.youtube-nocookie.com/embed/SPCQCjpDrB0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=1&amp;playlist=SPCQCjpDrB0" data-has-notes="false">
+<h2>Motor Impairment</h2>
+</section>
+
+<section id="accessibility-keyboard-only" class="slide" data-has-notes="false">
+<h2>Keyboard only - focus style ✔</h2><p><img src="images/focus-style.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-keyboard-only-example" class="slide" data-has-notes="false">
+<h2>Keyboard - TABINDEX going wrong</h2><video class="stretch" controls type="video/mp4" src="/media/tabbing.mp4"><a href="https://www.youtube.com/v/Sqwm2B5yTXE">A video of tabbing going wrong</a></video>
+</section>
+
+<section id="accessibility-tab-index-bad" class="slide" data-has-notes="false">
+<h2>Tabindex ✔</h2><p><img src="images/tabindex-bad.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-tab-index-good" class="slide" data-has-notes="false">
+<h2>Tabindex ✔</h2><p><img src="images/tabindex-good.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-tab-index-example" class="slide" data-has-notes="false">
+<h2>Keyboard - TABINDEX fixed</h2><video class="stretch" controls type="video/mp4" src="/media/tabbing2.mp4"><a href="https://www.youtube.com/v/6lJ70HH9JHY">A video of tabbing fix</a>
+</video>
+</section>
+
+<section id="accessibility-visual-impairment" class="slide" data-has-notes="false">
+<h2>Visual Impairment</h2>
+</section>
+
+<section id="accessibility-images" class="slide" data-has-notes="false">
+<h2>Images</h2><p><img src="images/images.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-alt-text" class="slide" data-has-notes="false">
+<h2>Alt Text</h2><p><img src="images/alt-text.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-global-entry-example" class="slide" data-has-notes="false">
+<p><img src="images/global-entry-example.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-global-entry-example-answers" class="slide" data-has-notes="false">
+<p><img src="images/global-entry-example-small.jpg" alt=""></p>
+<ul>
+<li>✖ No alt text</li>
+<li>✖ <code>alt=&quot;Image of UK Flag&quot;</code></li>
+<li>✔ Empty alt attribute <code>alt=&quot;&quot;</code></li>
+</ul>
+</section>
+
+<section id="accessibility-semantic-links-bad" class="slide" data-has-notes="false">
+<h2>Semantic links ✖</h2><p><img src="images/semantic-links-cross.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-semantic-links-good" class="slide" data-has-notes="false">
+<h2>Semantic links ✔</h2><p><img src="images/semantic-links-tick.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-code-order-bad" class="slide" data-has-notes="false">
+<h2>Code order ✖</h2><p><img src="images/given-names.jpg" alt=""></p>
+<iframe class="ace stretch" data-mode="html"><input type="text">
+<label style="margin-top: -4em">
+  Given names
+</label>
+</iframe>
+</section>
+
+<section id="accessibility-code-order-good" class="slide" data-has-notes="false">
+<h2>Code order ✔</h2><p><img src="images/given-names.jpg" alt=""></p>
+<iframe class="ace stretch" data-mode="html"><label for="givenName">
+  Given names
+</label>
+<input type="text" id="givenName" aria-required="true">
+</iframe>
+</section>
+
+<section id="accessibility-semantic-markup-bad" class="slide" data-has-notes="false">
+<h2>Semantic markup ✖</h2><p><img src="images/immigration-status.jpg" alt=""></p>
+<iframe class="ace stretch" data-mode="html"><p>Has your immigration status changed?</p>
+<input type="radio"><span>Yes</span>
+<input type="radio"><span>No</span>
+</iframe>
+</section>
+
+<section id="accessibility-semantic-markup-good" class="slide" data-has-notes="false">
+<h2>Semantic markup ✔</h2><p><img src="images/immigration-status.jpg" alt=""></p>
+<iframe class="ace stretch" data-mode="html"><fieldset>
+  <legend>Has your immigration status changed?</legend>
+  <label for="immigration-Yes">
+    <input type="radio" name="immigration" id="immigration-Yes" value="Yes">Yes
+  </label>
+  <label for="immigration-No">
+    <input type="radio" name="immigration" id="immigration-No" value="No">No
+  </label>
+</fieldset></iframe>
+</section>
+
+<section id="accessibility-colour-bad" class="slide" data-has-notes="false">
+<h2>Colour ✖</h2><p><img src="images/colour-bad-1.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-colour-bad2" class="slide" data-has-notes="false">
+<h2>Colour ✖</h2><p> <img src="images/colour-bad-2.jpg" alt=""> </p>
+<p><a href="http://webaim.org/resources/contrastchecker​">Contrast checker</a></p>
+</section>
+
+<section id="accessibility-colour-good" class="slide" data-has-notes="false">
+<h2>Colour ✔</h2><p><img src="images/colour-good.jpg" alt=""></p>
+</section>
+
+<section id="accessibility-placement" class="slide" data-has-notes="false">
+<h2>Content placement gone wrong at zoom</h2><video class="stretch" controls type="video/mp4" src="/media/content-placement.mp4"><a href="https://www.youtube.com/watch?v=4IbpQld5J_0">A video of content placement gone wrong</a></video>
+</section>
+
+<section id="accessibility-summary" class="slide" data-has-notes="false">
+<h2>Summary</h2><ul>
+<li>typography style, line height and alignment​</li>
+<li>focus on tabbed elements​</li>
+<li>tab flow and tabindex​</li>
+<li>using alternative text on media​</li>
+<li>semantic links and markup​</li>
+<li>ordering code for screen readers​</li>
+<li>colour contrast​</li>
+</ul>
+</section>
+
+<section id="accessibility-notes" class="slide" data-has-notes="false">
+<h2>A few other things to note​</h2><ul>
+<li>semantic HTML - headings, header, nav, footer, sections ​</li>
+<li>labels with input boxes, radio buttons etc​</li>
+<li>fieldsets and legends with radio buttons​</li>
+<li>Tools for auditing – <a href="http://wave.webaim.org/">Wave</a>, <a href="https://www.google.co.uk/accessibility/">Google accessibility​</a></li>
+<li><a href="https://github.com/alphagov/govuk_elements">GDS gov.uk elements​</a></li>
+</ul>
+</section>
+
+<section id="accessibility-contacts" class="slide" data-has-notes="false">
+<h2>Developer access needs leads</h2><ul>
+<li><a href="mailto:ben.marvell@digital.homeoffice.gov.uk">Ben Marvell</a></li>
+<li><a href="sulthan.ahmed@digital.homeoffice.gov.uk">Sulthan Ahmed</a></li>
+</ul>
+</section>
+</section>
+
+<section id="chapter-platform-hub" class="chapter">
+<section id="platform-hub-hub" class="slide" data-has-notes="false">
+<h1>Platform Hub</h1>
+</section>
+
+<section id="platform-hub-objectives" class="slide" data-has-notes="false">
+<h2>Our Platform Hub Objectives</h2><p>By the end of this Platform Hub section you should:</p>
+<ul>
+<li>Be onboarded to the hub</li>
+<li>Know where and how to make support related requests</li>
+<li>Have access to the developer-induction project</li>
+<li>Configure kubectl with your kube token</li>
+</ul>
+</section>
+
+<section id="platform-hub-letsgetonboarded" class="slide" data-has-notes="false">
+<h2>Let&#39;s get onboarded!</h2><p>Please follow these step to onboard yourself to the Platform Hub:</p>
+<ol>
+<li>Go to <a href="https://access-acp.digital.homeoffice.gov.uk">access-acp.digital.homeoffice.gov.uk</a> to download and run <code>ACP Operations</code> VPN profile.</li>
+<li>Go to the hub: <a href="https://hub.acp.homeoffice.gov.uk">hub.acp.homeoffice.gov.uk</a>.</li>
+<li>Now click the login button to use you&#39;re o365 credentials.</li>
+<li>The Terms of Service tab will be viewable. Give yourself a minute and accept if your happy.</li>
+</ol>
+</section>
+
+<section id="platform-hub-continuingletsgetonboarded" class="slide" data-has-notes="false">
+<h2>Continuing Let&#39;s get Onboarded</h2><ol>
+<li>On the Hub Setup tab select both Managerial and Technical duties.</li>
+<li>On the Services Onboarding tab add your Github identity and onboard yourself.</li>
+<li>You will now be able to view your o365 and github identity by clicking on the Connected Identities tab.</li>
+</ol>
+</section>
+
+<section id="platform-hub-whatareplatformthemes" class="slide" data-has-notes="false">
+<h2>What are platform themes?</h2><ul>
+<li>Platform Themes are various areas of the platform capabilities to find more information about</li>
+<li>Each theme section provides links to docs, support request forms, other sections on the hub, etc.</li>
+<li>Exploring these links will help get a better perspective on ACP</li>
+<li>We currently have implemented themes for &#39;Develop&#39;, &#39;Build&#39;, &#39;Deploy&#39; and &#39;Manage&#39;</li>
+</ul>
+</section>
+
+<section id="platform-hub-helpandsupport" class="slide" data-has-notes="false">
+<h2>Where can I find some help</h2><ul>
+<li>Help and support is located in the section at the bottom of the Platform Hub menu bar</li>
+<li>Further information relating to the hub and the ACP team can be found in the FAQ tab</li>
+<li>Support request forms can also be found here</li>
+<li>There are support templates for most of the common request</li>
+<li>If one doesn&#39;t exist please let one of the Platform Hub admins know</li>
+</ul>
+</section>
+
+<section id="platform-hub-projectsandkubetokens" class="slide" data-has-notes="false">
+<h2>Projects and Kube Tokens</h2><ul>
+<li>All projects on the Platform Hub are found in the Projects tab within the Org section</li>
+<li>You should now be able to see Dev Induction project in the list</li>
+<li>Clicking on the details button will show the Overview &amp; People screen</li>
+<li>Here you&#39;ll be able to see all the team members in your project</li>
+</ul>
+</section>
+
+<section id="platform-hub-continuingprojectsandkubetokens" class="slide" data-has-notes="true">
+<h2>Continuing Projects and Kube tokens</h2><ul>
+<li>We&#39;ve now allocated developer-induction kubernetes tokens</li>
+<li>These can be seen in Connected Identities. To see it expand Show Tokens and click on the eye icon</li>
+<li>You&#39;ll be able to view to kubectl&#39;s config by clicking on the <code>SET UP KUBE CONFIG</code> button</li>
+<li>Copy and paste the commands into the terminal</li>
+</ul><aside class="notes"><p>To see the token expand Show Tokens and click on the eye icon</p></aside>
+</section>
+
+<section id="platform-hub-whatdoyouthink" class="slide" data-has-notes="false">
+<h2>We love feedback</h2><p>Please give us feedback, this is a relatively new application so there&#39;s going to be teething issues. However, we are driven to sorting as many of them as we can and improving how projects interact with ACP.</p>
+<p>Feel free to get in contact with us on <a href="https://hod-dsp.slack.com">hod-dsp</a> slack at #platform-hub to give feedback and ideas.</p>
+</section>
+</section>
+
+<section id="chapter-hod-platform-and-technologies" class="chapter">
+<section id="hod-platform-and-technologies-hod-platform-and-technologies" class="slide" data-has-notes="false">
+<h1>HOD Platform and Technologies</h1><p>How we build and deploy</p>
+</section>
+
+<section id="hod-platform-and-technologies-technical-service-requirements" class="slide" data-has-notes="false">
+<h1><a href="https://github.com/UKHomeOffice/technical-service-requirements">Technical Service Requirements</a></h1><ul>
+<li>services have independent lifecycles</li>
+<li>automated tests</li>
+<li>backwards compatible deployments</li>
+</ul>
+</section>
+
+<section id="hod-platform-and-technologies-docker-img" class="slide" data-has-notes="false">
+<h2>Docker</h2><p><img src="images/docker.jpg" alt=""></p>
+</section>
+
+<section id="hod-platform-and-technologies-docker-details" class="slide" data-has-notes="true">
+<h2>Docker</h2><ul>
+<li>Wrap up a piece of software in a isolated runtime</li>
+<li>Guarantee it will always run the same on any environment</li>
+<li>No more Puppet or Chef</li>
+</ul><aside class="notes"><ul>
+<li>Docker containers wrap up a piece of software in a complete filesystem that contains everything it needs to run: code, 
+runtime, system tools, system libraries – anything you can install on a server</li>
+<li>This guarantees that it will always run the same, regardless of the environment it is running in</li>
+<li>NO MORE WORRYING ABOUT PUPPET/CHEF/ANSIBLE, EITHER YOUR CONTAINER IS UP, OR IT ISN’T</li>
+</ul></aside>
+</section>
+
+<section id="hod-platform-and-technologies-dockerfile" class="slide" data-has-notes="false">
+<h2>Dockerfiles</h2><ul>
+<li>Dockerfile, is a file, with a set of instructions, starting with a FROM image, to build an image​</li>
+</ul>
+<iframe class="ace stretch" data-mode="dockerfile">
+FROM node:6-alpine
+RUN mkdir -p /usr/src/app &amp;&amp; chown -R node /usr/src/app
+WORKDIR /usr/src/app
+USER node
+COPY . .
+RUN npm install --quiet &amp;&amp; npm test
+EXPOSE 4000
+CMD npm start
+</iframe>
+</section>
+
+<section id="hod-platform-and-technologies-docker-build-process" class="slide" data-has-notes="false">
+<p><img src="images/docker-build-process.jpg" alt=""></p>
+</section>
+
+<section id="hod-platform-and-technologies-mission-1-docker" class="slide" data-has-notes="false">
+<h2>Mission 1! Getting started with Docker</h2><ol>
+<li><p>You be assigned a repo <code>hello-world-x</code> so pull it down locally</p>
+</li>
+<li><p>Dockerise this simple NodeJS application (you can use one of your own applications if you like!)​
+<a href="https://github.com/UKHomeOffice/node-hello-world">https://github.com/UKHomeOffice/node-hello-world</a> ​</p>
+</li>
+<li><p>Run the dockerfile and verify the app is running on localhost 4000</p>
+</li>
+</ol>
+<p>Extra useful documentation relating to docker can be found at:
+<a href="https://docs.docker.com/engine/getstarted">https://docs.docker.com/engine/getstarted</a></p>
+</section>
+
+<section id="hod-platform-and-technologies-editor" class="slide" data-has-notes="false">
+<p>Dockerfile Editor</p>
+<iframe class="ace stretch" data-mode="dockerfile">FROM node:6-alpine
+</iframe>
+</section>
+
+<section id="hod-platform-and-technologies-docker-best-practice" class="slide" data-has-notes="false">
+<h1>Docker best practice</h1><ul>
+<li>Use a <code>ukhomeoffice</code> base image</li>
+<li>Don&#39;t run as <code>root</code></li>
+<li>Keep it small and simple<ul>
+<li>Only one running process</li>
+<li>Don&#39;t install anything you don&#39;t need at runtime</li>
+<li>Minimize layers</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="hod-platform-and-technologies-managing-containers" class="slide" data-has-notes="false">
+<h2>Managing Containers</h2><p><img src="images/managing-containers.jpg" alt=""></p>
+</section>
+
+<section id="hod-platform-and-technologies-our-solution-kubernetes" class="slide" data-has-notes="false">
+<h2>Our solution...? Kubernetes</h2><p><img src="images/kubernetes.jpg" alt=""></p>
+</section>
+
+<section id="hod-platform-and-technologies-what-is-kubernetes" class="slide" data-has-notes="false">
+<h2>What is Kubernetes</h2><p>Kubernetes is an open source container cluster manager by Google (though google don&#39;t own it, now developed by the community). It aims to provide a platform for automating deployment, scaling, and operations of application containers across clusters of hosts.​</p>
+</section>
+
+<section id="hod-platform-and-technologies-kubernetes-key-concepts" class="slide" data-has-notes="false">
+<p><img src="images/pod-service-ingress-cluster-namespace.jpg" alt=""></p>
+</section>
+
+<section id="hod-platform-and-technologies-kubernetes-keywords" class="slide" data-has-notes="false">
+<h2>Key Kubernetes Concepts</h2><ul>
+<li>Pods → set of containers that work together ​</li>
+<li>Deployments → Containers with Insurance policy (replicas)​</li>
+<li>Services →  Internal Load balancers to expose your app to Kubernetes land​</li>
+<li>Ingress → External Load balancers to expose your app to the rest of the world​</li>
+<li>Namespaces → Virtual Environments​</li>
+<li>Network Policy �~@~K Pod rules for connecting between namespaces and servic�~@~K
+Read up on the Kubernetes documentation for more information!​
+<a href="http://kubernetes.io/docs/">http://kubernetes.io/docs/</a></li>
+</ul>
+</section>
+
+<section id="hod-platform-and-technologies-kubectl-tutorial" class="slide" data-has-notes="false">
+<h2>Using Kubectl</h2><p>Here a list of useful commands to be run when querying your namespace:</p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction get po</code></p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction get events</code></p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction describe deploy hello-world</code></p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction exec -it hello-world-*-* /bin/sh</code></p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction scale deploy/hello-world --replicas=3</code></p>
+<p><code>kubectl --context=&lt;your-context&gt; -n developer-induction explain</code></p>
+</section>
+</section>
+
+<section id="chapter-continuous-integration" class="chapter">
+<section id="continuous-integration-ci" class="slide" data-has-notes="false">
+<h1>Continuous integration</h1>
+</section>
+
+<section id="continuous-integration-drone" class="slide" data-has-notes="false">
+<h2>Drone</h2><ul>
+<li>Pipeline as code​</li>
+<li>Fully containerised​</li>
+<li>Integration with Github/Gitlab​</li>
+<li>Stateless​</li>
+<li>Docker containers as part of the deployment​</li>
+</ul>
+</section>
+
+<section id="continuous-integration-example-drone-yaml" class="slide" data-has-notes="false">
+<h2>Example Drone yaml file - .drone.yml</h2><iframe class="ace stretch" data-mode="yaml">pipeline:
+  my-build:
+    image: docker:17.07.0-ce
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker build -t node-hello-world .
+    when:
+      branch: master
+      event: push
+
+  image_to_quay:
+    image: docker:17.07.0-ce
+    environment:
+      - DOCKER_HOST=tcp://127.0.0.1:2375
+    commands:
+      - docker login -u=ukhomeofficedigital+drone_demo -p=${DOCKER_PASSWORD} quay.io
+      - docker tag node-hello-world quay.io/ukhomeofficedigital/node-hello-world:${DRONE_COMMIT_SHA}
+      - docker push quay.io/ukhomeofficedigital/node-hello-world:${DRONE_COMMIT_SHA}
+    when:
+      branch: master
+      event: push
+</iframe>
+</section>
+
+<section id="continuous-integration-mission-2-drone" class="slide" data-has-notes="false">
+<h2>Mission 2! Build in CI​</h2><p>You will need the Drone docs... <a href="http://bit.ly/2shYCuN">http://bit.ly/2shYCuN</a></p>
+</section>
+
+<section id="continuous-integration-mission-2-drone" class="slide" data-has-notes="false">
+<ol>
+<li>Install the Drone CLI and add some secrets (see the docs above)</li>
+<li>Make CI deploy the <code>v1</code> tag whenever a new commit is pushed</li>
+<li>Make CI build your application whenever a new commit is pushed​</li>
+<li>Publish a Docker image to Quay as part of your CI pipeline​</li>
+</ol>
+</section>
+
+<section id="continuous-integration-mission-2-hints-1" class="slide" data-has-notes="false">
+<h2>Mission Hints - .drone.yml</h2><iframe class="ace stretch" data-mode="yaml">pipeline:
+  my-deploy:
+    image: quay.io/ukhomeofficedigital/kd
+    environment:
+      - KUBE_SERVER=https;//kube-dev.dsp.notprod.homeoffice.gov.uk
+      - KUBE_NAMESPACE=dev-induction
+      - APP_NAME=sssfsdf
+      - APP_VERSION=v1
+    commands:
+      - kd -f kube-templated/secret.yaml -f kube-templated/deployment.yaml -f kube-templated/service.yaml -f kube-templated/ingress.yaml
+    when:
+      branch: master
+      event: push
+</iframe>
+</section>
+
+<section id="continuous-integration-managing-deployments-multiple-envs" class="slide" data-has-notes="true">
+<h2>Managing deployments to multiple environments​</h2><p>Kubernetes resource files for each environments is painful​</p>
+<p>Enter KD</p>
+<ul>
+<li>We can template these resource files and use them across environments​</li>
+<li>Single command to deploy​</li>
+<li>Waiting for resource creation (e.g. kd waits for containers to be ready on creation of deployment resources)</li>
+</ul><aside class="notes"><ul>
+<li>Blocking - Doesn&#39;t exit till the deploy is done, and gives a meaningful exit code</li>
+</ul></aside>
+</section>
+
+<section id="continuous-integration-mission-3-deployment" class="slide" data-has-notes="false">
+<h2>Mission 3! Deploy an application to kubernetes</h2><p>Here&#39;s a useful developer getting started guide!​ <a href="http://bit.ly/2gEJ2IK">http://bit.ly/2gEJ2IK</a></p>
+<p>​</p>
+</section>
+
+<section id="continuous-integration-mission-3-deployment" class="slide" data-has-notes="false">
+<ol>
+<li><p>Trigger a sample application deployment to the ACP <a href="http://bit.ly/2hbs3hj">http://bit.ly/2hbs3hj</a></p>
+</li>
+<li><p>Verify that the deployment was successful</p>
+</li>
+<li><p>Delete everything you have deployed!​</p>
+</li>
+</ol>
+</section>
+
+<section id="continuous-integration-mission-4-secrets" class="slide" data-has-notes="false">
+<h2>Mission 4! Use a secret in your deployed application</h2><ol>
+<li><p>Create a kubernetes secret, making sure to template out the secret value in your secret yaml
+<a href="http://bit.ly/2h2CizD">http://bit.ly/2h2CizD</a></p>
+</li>
+<li><p>Update your deployment to load in your secret as an environment variable called MYSUPERSECRET
+Tutorial follows on from link above</p>
+</li>
+</ol>
+</section>
+
+<section id="continuous-integration-more-tools" class="slide" data-has-notes="false">
+<h2>Some more tools worth knowing about</h2><ul>
+<li>Nginx with Naxsi - standard image for HO (<a href="https://github.com/UKHomeOffice/docker-nginx-proxy">https://github.com/UKHomeOffice/docker-nginx-proxy</a>)</li>
+<li>Standard base images (<a href="http://bit.ly/2fW70fh">http://bit.ly/2fW70fh</a>)</li>
+<li>Keycloak<ul>
+<li>Keycloak central service (<a href="http://keycloak.digital.homeoffice.gov.uk/">http://keycloak.digital.homeoffice.gov.uk/</a>)</li>
+<li>keycloak-proxy docker image (<a href="https://github.com/gambol99/keycloak-proxy/">https://github.com/gambol99/keycloak-proxy/</a>)</li>
+</ul>
+</li>
+</ul>
+</section>
+
+<section id="continuous-integration-even-more-tools" class="slide" data-has-notes="false">
+<h2>Even more tools worth knowing about!</h2><ul>
+<li>Sysdig monitoring<ul>
+<li><a href="https://sysdig.digital.homeoffice.gov.uk/">https://sysdig.digital.homeoffice.gov.uk/</a></li>
+<li>Training: <a href="https://sysdig.teachable.com/p/sysdig-101">https://sysdig.teachable.com/p/sysdig-101</a></li>
+</ul>
+</li>
+<li>Kibana logging (ELK)<ul>
+<li><a href="https://kibana.acp.homeoffice.gov.uk/">https://kibana.acp.homeoffice.gov.uk/</a></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+
+<section id="thanks" class="slide" data-has-notes="false">
+<h1>Thanks!</h1><p>Pull requests welcome</p>
+<p>Please complete the survey here:
+<a href="http://www.homeofficesurveys.homeoffice.gov.uk/s/NWWXY">http://www.homeofficesurveys.homeoffice.gov.uk/s/NWWXY</a></p>
+<h2>Stay in touch</h2><ul>
+<li><a href="centreofexcellencecentral@digital.homeoffice.gov.uk">Email us</a></li>
+<li><a href="https://homeofficedigital.slack.com/messages/C2J3C0P9A">Slack us</a></li>
+</ul>
+</section></div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+
+    <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+
+      transition: Reveal.getQueryHash().transition || 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [
+        //{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+        //{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+        { src: 'plugin/zoom-js/zoom.js', async: true },
+        { src: 'plugin/notes/notes.js', async: true }
+      ]
+    });
+    </script>
+
+    <script src="js/dynamic-theme.js"></script><script src="js/custom.js"></script>
+
+  </body>
+</html>

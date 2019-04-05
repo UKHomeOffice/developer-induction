@@ -1,0 +1,39 @@
+/* custom styles can go here */
+
+#chapter-foo p {
+    text-transform: uppercase;
+}
+
+#accessibility-keyboard-only-example a {
+    text-decoration: underline;
+}
+
+#accessibility-tab-index-example a {
+    text-decoration: underline;
+}
+
+#accessibility-colour-bad2 p a {
+    text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: Helvetica, sans-serif !important;
+    text-transform: initial !important;
+}
+
+pre {
+    width: initial !important;
+    white-space: pre-wrap;
+}
+
+body:not(.print-pdf) .speaker-notes {
+    display: none !important;
+}
+
+body.print-pdf .speaker-notes {
+    position: relative !important;
+}
+
+.reveal .slide-background.present[style*='background-image'] {
+    opacity: 0.1;
+}

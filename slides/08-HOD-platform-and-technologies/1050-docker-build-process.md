@@ -1,1 +1,0 @@
-![](images/docker-build-process.jpg)

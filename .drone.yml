@@ -26,7 +26,7 @@ pipeline:
       event: push
 
   deploy_to_dev:
-    image: quay.io/ukhomeofficedigital/kd:v0.8.0
+    image: quay.io/ukhomeofficedigital/kd:v1.34.1
     secrets:
       - kube_token
     environment:
